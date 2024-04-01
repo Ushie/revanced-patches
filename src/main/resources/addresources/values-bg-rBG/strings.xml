@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <app id="shared">
+        <patch id="misc.settings.BaseSettingsResourcePatch">
+            <string name="revanced_settings_title">ReVanced</string>
+            <string name="revanced_settings_confirm_user_dialog_title">Желаете ли да продължите?</string>
+            <string name="revanced_settings_reset">Нулиране</string>
+            <string name="revanced_settings_restart_title">Опреснете и рестартирайте</string>
+            <string name="revanced_settings_restart">Рестартиране</string>
+            <string name="revanced_settings_import">Импортиране</string>
+            <string name="revanced_settings_import_copy">Копиране</string>
+            <string name="revanced_settings_import_reset">Настройките на ReVanced бяха нулирани</string>
+            <string name="revanced_settings_import_success">Следните настройки бяха импортирани успешно: %d</string>
+            <string name="revanced_settings_import_failure_parse">Импортирането беше неуспешно: %s</string>
+        </patch>
+        <patch id="misc.gms.BaseGmsCoreSupportResourcePatch">
+            <string name="gms_core_toast_not_installed_message">GmsCore не е инсталирано. </string>
+            <string name="gms_core_toast_not_whitelisted_message"/>
+            <string name="gms_core_dialog_title"/>
+            <string name="gms_core_dialog_not_whitelisted_using_battery_optimizations_message"/>
+            <string name="gms_core_dialog_not_whitelisted_not_allowed_in_background_message"/>
+            <string name="gms_core_dialog_ok_button_text"/>
+        </patch>
+    </app>
+    <app id="youtube">
+        <patch id="misc.settings.SettingsResourcePatch">
+            <string name="revanced_settings">ReVanced</string>
+            <string name="revanced_pref_import_export_title">Импортиране / Експортиране</string>
+            <string name="revanced_pref_import_export_summary">Импортиране / Експортиране на ReVanced настройките</string>
+        </patch>
+        <patch id="misc.settings.SettingsPatch">
+            <string name="revanced_settings_screen_01_ads_title">Реклами</string>
+            <string name="revanced_settings_screen_02_alt_thumbnails_title">Алтернативни миниатюри</string>
+            <string name="revanced_settings_screen_03_feed_title">Поток</string>
+            <string name="revanced_settings_screen_04_player_title">Плейър</string>
+            <string name="revanced_settings_screen_05_general_title">Общо оформление</string>
+            <string name="revanced_settings_screen_06_shorts_title">Shorts</string>
+            <string name="revanced_settings_screen_07_seekbar_title">Seekbar</string>
+            <string name="revanced_settings_screen_08_swipe_controls_title">Контроли с плъзгане</string>
+            <string name="revanced_settings_screen_11_misc_title">Разни</string>
+            <string name="revanced_settings_screen_12_video_title">Видео</string>
+        </patch>
+        <patch id="misc.debugging.DebuggingPatch">
+            <string name="revanced_debug_screen_title">Отстраняване на грешки</string>
+            <string name="revanced_debug_screen_summary">Активиране или деактивиране на отстраняването на грешки</string>
+            <string name="revanced_debug_title">Дневник на отстраняването на грешки</string>
+            <string name="revanced_debug_summary_on">Дневникът за остраняване на грешки е активиран</string>
+            <string name="revanced_debug_summary_off">Дневникът за остраняване на грешки е деактивиран</string>
+            <string name="revanced_debug_protobuffer_title">Буфер на протокола за дневника</string>
+            <string name="revanced_debug_protobuffer_summary_on">Файлове с дневници за грешки включват буфера</string>
+            <string name="revanced_debug_protobuffer_summary_off">Файлове с дневници за грешки не включват буфера</string>
+            <string name="revanced_debug_stacktrace_title">Следи от стека на дневника</string>
+            <string name="revanced_debug_stacktrace_summary_on">Дневникът за отстраняване на грешки съдържа следи от стека</string>
+            <string name="revanced_debug_stacktrace_summary_off">Дневникът за отстраняване на грешки не съдържа следи от стека</string>
+            <string name="revanced_debug_toast_on_error_title">Покажи системно съобщение при ReVanced грешка</string>
+            <string name="revanced_debug_toast_on_error_summary_on">Системно съобщение ще бъде показано, ако се появи грешка</string>
+            <string name="revanced_debug_toast_on_error_summary_off">Системно съобщение няма да бъде показано, ако се появи грешка</string>
+            <string name="revanced_debug_toast_on_error_user_dialog_message">Ако изключите системните съобщения, ще скриете всички уведомления за ReVanced грешки. \n\nНяма да бъдете уведомени, ако настъпят неочаквани събития.</string>
+        </patch>
+        <patch id="layout.hide.general.HideLayoutComponentsPatch">
+            <string name="revanced_hide_gray_separator_title">Скриване на сивия разделител</string>
+            <string name="revanced_hide_gray_separator_summary_on">Сивите разделители са скрити</string>
+            <string name="revanced_hide_gray_separator_summary_off">Сивите разделители са показани</string>
+            <string name="revanced_hide_join_membership_button_title">Скриване на бутона \'Присъедини се\'</string>
+            <string name="revanced_hide_join_membership_button_summary_on">Бутонът е скрит</string>
+            <string name="revanced_hide_join_membership_button_summary_off">Бутонът е показан</string>
+            <string name="revanced_hide_channel_watermark_title">Скриване на водния знак на канала</string>
+            <string name="revanced_hide_channel_watermark_summary_on">Водният знак е скрит</string>
+            <string name="revanced_hide_channel_watermark_summary_off">Водният знак е показан</string>
+            <string name="revanced_hide_for_you_shelf_title">Скриване на рафта \'За вас\' в страницата на канала</string>
+            <string name="revanced_hide_for_you_shelf_summary_on">Рафтът е скрит</string>
+            <string name="revanced_hide_for_you_shelf_summary_off">Рафтът е показан</string>
+            <string name="revanced_hide_notify_me_button_title">Скриване на бутона \'Уведоми ме\'</string>
+            <string name="revanced_hide_notify_me_button_summary_on">Бутонът е скрит</string>
+            <string name="revanced_hide_notify_me_button_summary_off">Бутонът е показан</string>
+            <string name="revanced_hide_timed_reactions_title">Скриване на времевите реакции</string>
+            <string name="revanced_hide_timed_reactions_summary_on">Времевите реакции са скрити</string>
+            <string name="revanced_hide_timed_reactions_summary_off">Времевите реакции са показани</string>
+            <string name="revanced_hide_search_result_recommendations_title">Скриване на препоръките \'Други харесват също\'</string>
+            <string name="revanced_hide_search_result_recommendations_summary_on">Препоръките са скрити</string>
+            <string name="revanced_hide_search_result_recommendations_summary_off">Препоръките са показани</string>
+            <string name="revanced_hide_search_result_shelf_header_title">Скриване на заглавието на рафта с резултатите от търсенето</string>
+            <string name="revanced_hide_search_result_shelf_header_summary_on">Заглавието на рафта е скрито</string>
+            <string name="revanced_hide_search_result_shelf_header_summary_off">Заглавието е показано</string>
+            <string name="revanced_hide_channel_guidelines_title">Скриване на насоките на канала</string>
+            <string name="revanced_hide_channel_guidelines_summary_on">Насоките на канала са скрити</string>
+            <string name="revanced_hide_channel_guidelines_summary_off">Насоките на канала са показани</string>
+            <string name="revanced_hide_expandable_chip_title">Скриване на разширяемия чип под видеоклиповете</string>
+            <string name="revanced_hide_expandable_chip_summary_on">Разширяващите се чипове са скрити</string>
+            <string name="revanced_hide_expandable_chip_summary_off">Разширяващите се чипове са показани</string>
+            <string name="revanced_hide_video_quality_menu_footer_title">Скриване на футъра на менюто за качество на видеото</string>
+            <string name="revanced_hide_video_quality_menu_footer_summary_on">Футърът на менюто за качество на видеото е скрит</string>
+            <string name="revanced_hide_video_quality_menu_footer_summary_off">Футърът на менюто за качество на видеото е показан</string>
+            <string name="revanced_hide_community_posts_title">Скриване на публикациите от общността</string>
+            <string name="revanced_hide_community_posts_summary_on">Публикациите от общността са скрити</string>
+            <string name="revanced_hide_community_posts_summary_off">Публикациите от общността са показани</string>
+            <string name="revanced_hide_compact_banner_title">Скриване на компактните банери</string>
+            <string name="revanced_hide_compact_banner_summary_on">Компактните банери са скрити</string>
+            <string name="revanced_hide_compact_banner_summary_off">Компактните банери са показани</string>
+            <string name="revanced_hide_movies_section_title">Скриване на раздела за филми</string>
+            <string name="revanced_hide_movies_section_summary_on">Разделът за филми е скрит</string>
+            <string name="revanced_hide_movies_section_summary_off">Разделът за филми е показан</string>
+            <string name="revanced_hide_feed_survey_title">Скриване на анкетите в новинарския поток</string>
+            <string name="revanced_hide_feed_survey_summary_on">Aнкетите в новинарския поток са скрити</string>
+            <string name="revanced_hide_feed_survey_summary_off">Aнкетите в новинарския поток са показани</string>
+            <string name="revanced_hide_community_guidelines_title">Скриване на насоките на общността</string>
+            <string name="revanced_hide_community_guidelines_summary_on">Насоките на общността са скрити</string>
+            <string name="revanced_hide_community_guidelines_summary_off">Насоките на общността са показани</string>
+            <string name="revanced_hide_subscribers_community_guidelines_title">Скриване на насоките за общността на абонатите</string>
+            <string name="revanced_hide_subscribers_community_guidelines_summary_on">Насоките за общността на абонатите са скрити</string>
+            <string name="revanced_hide_subscribers_community_guidelines_summary_off">Насоките за общността на абонатите са показани</string>
+            <string name="revanced_hide_channel_member_shelf_title">Скриване на рафта на канала</string>
+            <string name="revanced_hide_channel_member_shelf_summary_on">Рафтът на канала е скрит</string>
+            <string name="revanced_hide_channel_member_shelf_summary_off">Рафтът на канала е показан</string>
+            <string name="revanced_hide_emergency_box_title">Скриване аварийните кутии</string>
+            <string name="revanced_hide_emergency_box_summary_on">Аварийните кутии са скрити</string>
+            <string name="revanced_hide_emergency_box_summary_off">Аварийните кутии са показани</string>
+            <string name="revanced_hide_info_panels_title">Скриване на информационните панели</string>
+            <string name="revanced_hide_info_panels_summary_on">Информационните панели са скрити</string>
+            <string name="revanced_hide_info_panels_summary_off">Информационните панели са показани</string>
+            <string name="revanced_hide_medical_panels_title">Скриване на медицинските панели</string>
+            <string name="revanced_hide_medical_panels_summary_on">Медицинските панели са скрити</string>
+            <string name="revanced_hide_medical_panels_summary_off">Медицинските панели са показани</string>
+            <string name="revanced_hide_channel_bar_title">Скриване на лентата на канала</string>
+            <string name="revanced_hide_channel_bar_summary_on">Лентата на канала е скрита</string>
+            <string name="revanced_hide_channel_bar_summary_off">Лентата на канала е показана</string>
+            <string name="revanced_hide_quick_actions_title">Скриване на бързите действия в режим на цял екран</string>
+            <string name="revanced_hide_quick_actions_summary_on">Бързите действия в режим на цял екран са скрити</string>
+            <string name="revanced_hide_quick_actions_summary_off">Бързите действия в режим на цял екран са показани</string>
+            <string name="revanced_hide_related_videos_title">Скриване на свързаните видеоклипове в бързите действия</string>
+            <string name="revanced_hide_related_videos_summary_on">Свързаните видеоклипове в бързите действия са скирти</string>
+            <string name="revanced_hide_related_videos_summary_off">Свързаните видеоклипове в бързите действия са показани</string>
+            <string name="revanced_hide_image_shelf_title">Скриване на рафта с изображения в резултатите от търсенето</string>
+            <string name="revanced_hide_image_shelf_summary_on">Рафтът с изображения в резултатите от търсенето е скрит</string>
+            <string name="revanced_hide_image_shelf_summary_off">Рафтът с изображения в резултатите от търсенето е показан</string>
+            <string name="revanced_hide_latest_posts_ads_title">Скриване на последните публикации</string>
+            <string name="revanced_hide_latest_posts_ads_summary_on">Последните публикации са скрити</string>
+            <string name="revanced_hide_latest_posts_ads_summary_off">Последните публикации са показани</string>
+            <string name="revanced_hide_mix_playlists_title">Скриване на разбърканите плейлисти</string>
+            <string name="revanced_hide_mix_playlists_summary_on">Разбърканите плейлисти са скрити</string>
+            <string name="revanced_hide_mix_playlists_summary_off">Разбърканите плейлисти са показани</string>
+            <string name="revanced_hide_artist_cards_title">Скриване на картите на артистите</string>
+            <string name="revanced_hide_artist_cards_summary_on">Картите на артистите са скрити</string>
+            <string name="revanced_hide_artist_cards_summary_off">Картите на артистите са показани</string>
+            <string name="revanced_hide_chips_shelf_title">Скриване на рафта за чипове</string>
+            <string name="revanced_hide_chips_shelf_summary_on">Рафтът за чипове е скрит</string>
+            <string name="revanced_hide_chips_shelf_summary_off">Рафтът за чипове е показан</string>
+            <string name="revanced_hide_info_cards_section_title">Скриване на раздела за информационни карти</string>
+            <string name="revanced_hide_info_cards_section_summary_on">Разделът за информационни карти е скрит</string>
+            <string name="revanced_hide_info_cards_section_summary_off">Разделът за информационни карти е показан</string>
+            <string name="revanced_hide_chapters_title">Скриване на главите</string>
+            <string name="revanced_hide_chapters_summary_on">Главите са скрити</string>
+            <string name="revanced_hide_chapters_summary_off">Главите са показани</string>
+            <string name="revanced_hide_game_section_title">Скриване на раздела за игри</string>
+            <string name="revanced_hide_game_section_summary_on">Разделът за игри е скрит</string>
+            <string name="revanced_hide_game_section_summary_off">Разделът за игри е показан</string>
+            <string name="revanced_hide_music_section_title">Скриване на раздела за музика</string>
+            <string name="revanced_hide_music_section_summary_on">Разделът за музика е скрит</string>
+            <string name="revanced_hide_music_section_summary_off">Разделът за музика е показан</string>
+            <string name="revanced_hide_podcast_section_title">Скриване на раздела за подкасти</string>
+            <string name="revanced_hide_podcast_section_summary_on">Разделът за подкасти е скрит</string>
+            <string name="revanced_hide_podcast_section_summary_off">Разделът за подкасти е показан</string>
+            <string name="revanced_hide_transcript_section_title">Скриване на раздела за транскрипция</string>
+            <string name="revanced_hide_transcript_section_summary_on">Разделът за транскрипция е скрит</string>
+            <string name="revanced_hide_transcript_section_summary_off">Разделът за транскрипция е показан</string>
+            <string name="revanced_hide_description_components_screen_title">Описание на видеото</string>
+            <string name="revanced_hide_description_components_screen_summary">Скриване или показване на компонентите за описание на видеоклиповете</string>
+            <string name="revanced_custom_filter_screen_title">Потребителски филтър</string>
+            <string name="revanced_custom_filter_screen_summary">Скриване на компоненти с помощта на потребителски филтри</string>
+            <string name="revanced_custom_filter_title">Активиране на потребителските филтри</string>
+            <string name="revanced_custom_filter_summary_on">Потребителският филтър е активиран</string>
+            <string name="revanced_custom_filter_summary_off">Потребителският филтър е деактивиран</string>
+            <string name="revanced_custom_filter_strings_title">Потребителски филтър</string>
+            <string name="revanced_custom_filter_strings_summary">Списък с низове за изграждане на пътя на компонента, които да се филтрират, разделени с нов ред</string>
+            <string name="revanced_custom_filter_toast_invalid_syntax">Невалиден потребителски филтър: %s</string>
+            <string name="revanced_hide_keyword_content_screen_title">Скриване на съдържанието с ключови думи</string>
+            <string name="revanced_hide_keyword_content_screen_summary">Скриване на видеоклипове в резултатите от търсенуя и в новинарския поток с помощта на филтри с ключови думи</string>
+            <string name="revanced_hide_keyword_content_home_title">Скриване на видеоклипове на началната страница с ключови думи</string>
+            <string name="revanced_hide_keyword_content_home_summary_on">Видеоклиповете на началния екран са филтрирани с ключови думи</string>
+            <string name="revanced_hide_keyword_content_home_summary_off">Видеоклиповете на началния екран не са филтрирани с ключови думи</string>
+            <string name="revanced_hide_keyword_content_subscriptions_title">Скриване на видеоклипове от абонаменти с ключови думи</string>
+            <string name="revanced_hide_keyword_content_subscriptions_summary_on"/>
+            <string name="revanced_hide_keyword_content_subscriptions_summary_off">Видеоклиповете в раздела за абонаменти са са филтрирани с ключови думи</string>
+            <string name="revanced_hide_keyword_content_search_title">Скриване на резултати от търсения с ключови думи</string>
+            <string name="revanced_hide_keyword_content_search_summary_on">Резултатите от търсения са филтрирани с ключови думи</string>
+            <string name="revanced_hide_keyword_content_search_summary_off">Резултатите от търсения не са филтрирани с ключови думи</string>
+            <string name="revanced_hide_keyword_content_phrases_title">Ключови думи, които да бъдат скрити</string>
+            <string name="revanced_hide_keyword_content_phrases_summary">Ключови думи и фрази, които да бъдат скрити, разделени с нови редове\n\nДуми с главни букви в средата трябва да бъдат въведени с големи букви (например: iPhone, TikTok, LeBlanc)</string>
+            <string name="revanced_hide_keyword_content_about_title">За филтриране с ключови думи</string>
+            <string name="revanced_hide_keyword_content_about_summary">Начало/Абонамент/Резултатите от търсенето се филтрират, за да се скрие съдържанието, което съответства на ключовите фрази\n\nОграничения\n• Някои кратки видеоклипове може да не са скрити\n• Някои компоненти на потребителския интерфейс може да не са скрити\n• Търсенето на ключова дума може да не покаже резултати</string>
+            <string name="revanced_hide_keyword_toast_invalid_common" formatted="false">Невалидна ключова дума. Следният низ не може да бъде използван като филтър: \'%s\'</string>
+            <string name="revanced_hide_keyword_toast_invalid_length" formatted="false">Невалидна ключова дума. \'%s\' има по-малко от %s символа</string>
+        </patch>
+        <patch id="ad.general.HideAdsResourcePatch">
+            <string name="revanced_hide_general_ads_title">Скриване на общите реклами</string>
+            <string name="revanced_hide_general_ads_summary_on">Общите реклами са скрити</string>
+            <string name="revanced_hide_general_ads_summary_off">Общите реклами са показани</string>
+            <string name="revanced_hide_fullscreen_ads_title">Скриване на рекламите в режим на цял екран</string>
+            <string name="revanced_hide_fullscreen_ads_summary_on">Рекламите в режим на цял екран са скрити</string>
+            <string name="revanced_hide_fullscreen_ads_summary_off">Рекламите в режим на цял екран са показани</string>
+            <string name="revanced_hide_buttoned_ads_title">Скриване на рекламите като бутон</string>
+            <string name="revanced_hide_buttoned_ads_summary_on">Рекламите като бутон са скрити</string>
+            <string name="revanced_hide_buttoned_ads_summary_off">Рекламите като бутон са показани</string>
+            <string name="revanced_hide_paid_content_ads_title">Скриване на платено съдържание</string>
+            <string name="revanced_hide_paid_content_ads_summary_on">Платеното съдържание е скрито</string>
+            <string name="revanced_hide_paid_content_ads_summary_off">Платеното съдържание е показано</string>
+            <string name="revanced_hide_self_sponsor_ads_title">Скриване на самоспонсорирани карти</string>
+            <string name="revanced_hide_self_sponsor_ads_summary_on">Самоспонсорираните карти са скрити</string>
+            <string name="revanced_hide_self_sponsor_ads_summary_off">Самоспонсорираните карти са показани</string>
+            <string name="revanced_hide_products_banner_title">Скриване на банера за показване на продукти</string>
+            <string name="revanced_hide_products_banner_summary_on">Банерът е скрит</string>
+            <string name="revanced_hide_products_banner_summary_off">Банерът е показан</string>
+            <string name="revanced_hide_shopping_links_title">Скриване на връзките за пазаруване в описанието на видеоклипа</string>
+            <string name="revanced_hide_shopping_links_summary_on">Връзките за пазаруване са скрити</string>
+            <string name="revanced_hide_shopping_links_summary_off">Връзките за пазаруване са показани</string>
+            <string name="revanced_hide_web_search_results_title">Скриване на резултатите от уеб търсенето</string>
+            <string name="revanced_hide_web_search_results_summary_on">Резултатите от уеб търсенето са скрити</string>
+            <string name="revanced_hide_web_search_results_summary_off">Резултатите от уеб търсенето са показани</string>
+            <string name="revanced_hide_merchandise_banners_title">Скриване на банерите за стоки</string>
+            <string name="revanced_hide_merchandise_banners_summary_on">Банерите за стоки са скрити</string>
+            <string name="revanced_hide_merchandise_banners_summary_off">Банерите за стоки са показани</string>
+            <string name="revanced_hide_fullscreen_ads_feature_not_available_toast">Скриването на рекламата на цял екран беше неуспешно. Услугате ще бъде деактивирана, за да се предотвратят проблеми</string>
+        </patch>
+        <patch id="ad.getpremium.HideGetPremiumPatch">
+            <string name="revanced_hide_get_premium_title">Скриване на YouTube Premium промоции</string>
+            <string name="revanced_hide_get_premium_summary_on">YouTube Premium промоциите под видео плейъра са скрити</string>
+            <string name="revanced_hide_get_premium_summary_off">YouTube Premium промоциите под видео плейъра са показани</string>
+        </patch>
+        <patch id="ad.video.VideoAdsPatch">
+            <string name="revanced_hide_video_ads_title">Скриване на видео рекламите</string>
+            <string name="revanced_hide_video_ads_summary_on">Видео рекламите са скрити</string>
+            <string name="revanced_hide_video_ads_summary_off">Видео рекламите са показани</string>
+        </patch>
+        <patch id="interaction.copyvideourl.CopyVideoUrlResourcePatch">
+            <string name="revanced_share_copy_url_success">URL адресът е копиран в клипборда</string>
+            <string name="revanced_share_copy_url_timestamp_success">URL адресът с времеви отпечатък е копиран</string>
+            <string name="revanced_copy_video_url_title">Показване на бутона за копиране на URL адреса на видеоклипа</string>
+            <string name="revanced_copy_video_url_summary_on">Бутонът е показан. Натиснете, за да копирате URL адреса. Натиснете и задръжте, за да копирате URL адреса на видеото с времеви отпечатък</string>
+            <string name="revanced_copy_video_url_summary_off">Бутонът не е показан</string>
+            <string name="revanced_copy_video_url_timestamp_title">Показване на бутона за копиране на URL адреса на времевия отпечатък на видеоклипа</string>
+            <string name="revanced_copy_video_url_timestamp_summary_on">Бутонът е показан. Натиснете, за да копирате URL адреса на видеото с времеви отпечатък. Натиснете и задръжте, за да копирате URL адреса на видеото без времеви отпечатък</string>
+            <string name="revanced_copy_video_url_timestamp_summary_off">Бутонът не е показан</string>
+        </patch>
+        <patch id="interaction.dialog.RemoveViewerDiscretionDialogPatch">
+            <string name="revanced_remove_viewer_discretion_dialog_title">Скриване на прозореца за възрастово ограничение</string>
+            <string name="revanced_remove_viewer_discretion_dialog_summary_on">Диалоговият прозорец ще бъде премахнат</string>
+            <string name="revanced_remove_viewer_discretion_dialog_summary_off">Диалоговият прозорец ще бъде показан</string>
+            <string name="revanced_remove_viewer_discretion_dialog_user_dialog_message">По този начин не се заобикаля възрастовото ограничение. То просто е прието автоматично.</string>
+        </patch>
+        <patch id="interaction.downloads.DownloadsResourcePatch">
+            <string name="revanced_external_downloader_screen_title">Външни изтегляния</string>
+            <string name="revanced_external_downloader_screen_summary">Настройки за използване на външно приложение за изтегляне</string>
+            <string name="revanced_external_downloader_title">Показване на бутона за изтегляне чрез външно приложение</string>
+            <string name="revanced_external_downloader_summary_on">Бутонът за изтегляне е показан в плейъра</string>
+            <string name="revanced_external_downloader_summary_off">Бутонът за изтегляне не е показан в плейъра</string>
+            <string name="revanced_external_downloader_action_button_title">Отмяна на бутона за изтегляне</string>
+            <string name="revanced_external_downloader_action_button_summary_on">Бутонът за изтегляне отваря избраното от Вас външно приложение за изтегляне</string>
+            <string name="revanced_external_downloader_action_button_summary_off">Бутонът за изтегляне отваря вграденото приложение за изтегляне</string>
+            <string name="revanced_external_downloader_name_title">Име на пакета на изтеглящото приложение</string>
+            <string name="revanced_external_downloader_name_summary">Име на пакета на приложението за изтегляне, като NewPipe или Seal</string>
+            <string name="revanced_external_downloader_not_installed_warning">%s не е инсталирано. Моля инсталирайте го.</string>
+        </patch>
+        <patch id="interaction.seekbar.DisablePreciseSeekingGesturePatch">
+            <string name="revanced_disable_precise_seeking_gesture_title">Деактивиране на жеста за точно търсене</string>
+            <string name="revanced_disable_precise_seeking_gesture_summary_on">Жестът е деактивиран</string>
+            <string name="revanced_disable_precise_seeking_gesture_summary_off">Жестът е активиран</string>
+        </patch>
+        <patch id="interaction.seekbar.EnableSeekbarTappingPatch">
+            <string name="revanced_seekbar_tapping_title">Активиране на докосването на лентата за време</string>
+            <string name="revanced_seekbar_tapping_summary_on">Докосването на лентата за време е включено</string>
+            <string name="revanced_seekbar_tapping_summary_off">Докосването на лентата за време е изключено</string>
+        </patch>
+        <patch id="interaction.swipecontrols.SwipeControlsResourcePatch">
+            <string name="revanced_swipe_brightness_title">Задаване на яркост чрез плъзгане</string>
+            <string name="revanced_swipe_brightness_summary_on">Задаването на яркост чрез плъзгане е включено</string>
+            <string name="revanced_swipe_brightness_summary_off">Задаването на яркост чрез плъзгане е изключено</string>
+            <string name="revanced_swipe_volume_title">Настройване на звука чрез плъзгане</string>
+            <string name="revanced_swipe_volume_summary_on">Настройването на звука чрез плъзгане е включено</string>
+            <string name="revanced_swipe_volume_summary_off">Настройването на звука чрез плъзгане е изключено</string>
+            <string name="revanced_swipe_press_to_engage_title">Активиране на жеста натискане за преместване</string>
+            <string name="revanced_swipe_press_to_engage_summary_on">Натискането при плъзгане е включено</string>
+            <string name="revanced_swipe_press_to_engage_summary_off">Натискането при плъзгане е изключено</string>
+            <string name="revanced_swipe_haptic_feedback_title">Активиране на хептичната обратна връзка</string>
+            <string name="revanced_swipe_haptic_feedback_summary_on">Хептичната обратна връзка е активирана</string>
+            <string name="revanced_swipe_haptic_feedback_summary_off">Хептичната обратна връзка е деактивирана</string>
+            <string name="revanced_swipe_save_and_restore_brightness_title">Запазване и възстановяване на яркостта</string>
+            <string name="revanced_swipe_save_and_restore_brightness_summary_on">Запазване и възстаовяване яркостта при включване или изключване на цял екран</string>
+            <string name="revanced_swipe_save_and_restore_brightness_summary_off">Не се запазва или възстаовява яркостта при включване или изключване на цял екран</string>
+            <string name="revanced_swipe_overlay_timeout_title">Задръжка на плъзгащата контрола</string>
+            <string name="revanced_swipe_overlay_timeout_summary">Време за което плъзгащата контрола е видима</string>
+            <string name="revanced_swipe_text_overlay_size_title">Размер на текста при плъзгане</string>
+            <string name="revanced_swipe_text_overlay_size_summary">Размера на текста на плъзгащите контроли</string>
+            <string name="revanced_swipe_overlay_background_alpha_title">Видимост на фона на плъзгащите контроли</string>
+            <string name="revanced_swipe_overlay_background_alpha_summary">Видимостта на фона на плъзгащите контроли</string>
+            <string name="revanced_swipe_threshold_title">Праг на величината на плъзгане</string>
+            <string name="revanced_swipe_threshold_summary">Праг преди да се осъществи плъзгането</string>
+        </patch>
+        <patch id="layout.autocaptions.AutoCaptionsPatch">
+            <string name="revanced_auto_captions_title"/>
+            <string name="revanced_auto_captions_summary_on"/>
+            <string name="revanced_auto_captions_summary_off"/>
+        </patch>
+        <patch id="layout.buttons.action.HideButtonsPatch">
+            <string name="revanced_hide_buttons_screen_title"/>
+            <string name="revanced_hide_buttons_screen_summary"/>
+            <string name="revanced_hide_like_dislike_button_title"/>
+            <string name="revanced_hide_like_dislike_button_summary_on"/>
+            <string name="revanced_hide_like_dislike_button_summary_off"/>
+            <string name="revanced_hide_share_button_title"/>
+            <string name="revanced_hide_share_button_summary_on"/>
+            <string name="revanced_hide_share_button_summary_off"/>
+            <string name="revanced_hide_report_button_title"/>
+            <string name="revanced_hide_report_button_summary_on"/>
+            <string name="revanced_hide_report_button_summary_off"/>
+            <string name="revanced_hide_remix_button_title"/>
+            <string name="revanced_hide_remix_button_summary_on"/>
+            <string name="revanced_hide_remix_button_summary_off"/>
+            <string name="revanced_hide_download_button_title"/>
+            <string name="revanced_hide_download_button_summary_on"/>
+            <string name="revanced_hide_download_button_summary_off"/>
+            <string name="revanced_hide_thanks_button_title"/>
+            <string name="revanced_hide_thanks_button_summary_on"/>
+            <string name="revanced_hide_thanks_button_summary_off"/>
+            <string name="revanced_hide_clip_button_title"/>
+            <string name="revanced_hide_clip_button_summary_on"/>
+            <string name="revanced_hide_clip_button_summary_off"/>
+            <string name="revanced_hide_playlist_button_title"/>
+            <string name="revanced_hide_playlist_button_summary_on"/>
+            <string name="revanced_hide_playlist_button_summary_off"/>
+            <string name="revanced_hide_shop_button_title"/>
+            <string name="revanced_hide_shop_button_summary_on"/>
+            <string name="revanced_hide_shop_button_summary_off"/>
+        </patch>
+        <patch id="layout.buttons.autoplay.HideAutoplayButtonPatch">
+            <string name="revanced_hide_autoplay_button_title"/>
+            <string name="revanced_hide_autoplay_button_summary_on"/>
+            <string name="revanced_hide_autoplay_button_summary_off"/>
+        </patch>
+        <patch id="layout.buttons.captions.HideCaptionsButtonPatch">
+            <string name="revanced_hide_captions_button_title"/>
+            <string name="revanced_hide_captions_button_summary_on"/>
+            <string name="revanced_hide_captions_button_summary_off"/>
+        </patch>
+        <patch id="layout.buttons.cast.HideCastButtonPatch">
+            <string name="revanced_hide_cast_button_title"/>
+            <string name="revanced_hide_cast_button_summary_on"/>
+            <string name="revanced_hide_cast_button_summary_off"/>
+        </patch>
+        <patch id="layout.buttons.navigation.NavigationButtonsPatch">
+            <string name="revanced_navigation_buttons_screen_title"/>
+            <string name="revanced_navigation_buttons_screen_summary"/>
+            <string name="revanced_hide_home_button_title"/>
+            <string name="revanced_hide_home_button_summary_on"/>
+            <string name="revanced_hide_home_button_summary_off"/>
+            <string name="revanced_hide_shorts_button_title"/>
+            <string name="revanced_hide_shorts_button_summary_on"/>
+            <string name="revanced_hide_shorts_button_summary_off"/>
+            <string name="revanced_hide_create_button_title"/>
+            <string name="revanced_hide_create_button_summary_on"/>
+            <string name="revanced_hide_create_button_summary_off"/>
+            <string name="revanced_hide_subscriptions_button_title"/>
+            <string name="revanced_hide_subscriptions_button_summary_on"/>
+            <string name="revanced_hide_subscriptions_button_summary_off"/>
+            <string name="revanced_switch_create_with_notifications_button_title"/>
+            <string name="revanced_switch_create_with_notifications_button_summary_on"/>
+            <string name="revanced_switch_create_with_notifications_button_summary_off"/>
+        </patch>
+        <patch id="layout.hide.player.flyoutmenupanel.HidePlayerFlyoutMenuPatch">
+            <string name="revanced_hide_player_flyout_title"/>
+            <string name="revanced_hide_player_flyout_summary"/>
+            <string name="revanced_hide_player_flyout_captions_title"/>
+            <string name="revanced_hide_player_flyout_captions_summary_on"/>
+            <string name="revanced_hide_player_flyout_captions_summary_off"/>
+            <string name="revanced_hide_player_flyout_additional_settings_title"/>
+            <string name="revanced_hide_player_flyout_additional_settings_summary_on"/>
+            <string name="revanced_hide_player_flyout_additional_settings_summary_off"/>
+            <string name="revanced_hide_player_flyout_loop_video_title"/>
+            <string name="revanced_hide_player_flyout_loop_video_summary_on"/>
+            <string name="revanced_hide_player_flyout_loop_video_summary_off"/>
+            <string name="revanced_hide_player_flyout_ambient_mode_title"/>
+            <string name="revanced_hide_player_flyout_ambient_mode_summary_on"/>
+            <string name="revanced_hide_player_flyout_ambient_mode_summary_off"/>
+            <string name="revanced_hide_player_flyout_report_title"/>
+            <string name="revanced_hide_player_flyout_report_summary_on"/>
+            <string name="revanced_hide_player_flyout_report_summary_off"/>
+            <string name="revanced_hide_player_flyout_help_title"/>
+            <string name="revanced_hide_player_flyout_help_summary_on"/>
+            <string name="revanced_hide_player_flyout_help_summary_off"/>
+            <string name="revanced_hide_player_flyout_speed_title"/>
+            <string name="revanced_hide_player_flyout_speed_summary_on"/>
+            <string name="revanced_hide_player_flyout_speed_summary_off"/>
+            <string name="revanced_hide_player_flyout_more_info_title"/>
+            <string name="revanced_hide_player_flyout_more_info_summary_on"/>
+            <string name="revanced_hide_player_flyout_more_info_summary_off"/>
+            <string name="revanced_hide_player_flyout_audio_track_title"/>
+            <string name="revanced_hide_player_flyout_audio_track_summary_on"/>
+            <string name="revanced_hide_player_flyout_audio_track_summary_off"/>
+            <string name="revanced_hide_player_flyout_watch_in_vr_title"/>
+            <string name="revanced_hide_player_flyout_watch_in_vr_summary_on"/>
+            <string name="revanced_hide_player_flyout_watch_in_vr_summary_off"/>
+        </patch>
+        <patch id="layout.buttons.player.hide.HidePlayerButtonsPatch">
+            <string name="revanced_hide_player_buttons_title"/>
+            <string name="revanced_hide_player_buttons_summary_on"/>
+            <string name="revanced_hide_player_buttons_summary_off"/>
+        </patch>
+        <patch id="layout.hide.albumcards.AlbumCardsResourcePatch">
+            <string name="revanced_hide_album_cards_title"/>
+            <string name="revanced_hide_album_cards_summary_on"/>
+            <string name="revanced_hide_album_cards_summary_off"/>
+        </patch>
+        <patch id="layout.hide.breakingnews.BreakingNewsResourcePatch">
+            <string name="revanced_hide_breaking_news_title"/>
+            <string name="revanced_hide_breaking_news_summary_on"/>
+            <string name="revanced_hide_breaking_news_summary_off"/>
+        </patch>
+        <patch id="layout.hide.comments.CommentsPatch">
+            <string name="revanced_comments_screen_title"/>
+            <string name="revanced_comments_screen_summary"/>
+            <string name="revanced_hide_comments_section_title"/>
+            <string name="revanced_hide_comments_section_summary_on"/>
+            <string name="revanced_hide_comments_section_summary_off"/>
+            <string name="revanced_hide_preview_comment_title"/>
+            <string name="revanced_hide_preview_comment_summary_on"/>
+            <string name="revanced_hide_preview_comment_summary_off"/>
+        </patch>
+        <patch id="layout.hide.crowdfundingbox.CrowdfundingBoxResourcePatch">
+            <string name="revanced_hide_crowdfunding_box_title"/>
+            <string name="revanced_hide_crowdfunding_box_summary_on"/>
+            <string name="revanced_hide_crowdfunding_box_summary_off"/>
+        </patch>
+        <patch id="layout.hide.endscreencards.HideEndscreenCardsResourcePatch">
+            <string name="revanced_hide_endscreen_cards_title"/>
+            <string name="revanced_hide_endscreen_cards_summary_on"/>
+            <string name="revanced_hide_endscreen_cards_summary_off"/>
+        </patch>
+        <patch id="layout.hide.filterbar.HideFilterBarResourcePatch">
+            <string name="revanced_hide_filter_bar_screen_title"/>
+            <string name="revanced_hide_filter_bar_screen_summary"/>
+            <string name="revanced_hide_filter_bar_feed_in_feed_title"/>
+            <string name="revanced_hide_filter_bar_feed_in_feed_summary_on"/>
+            <string name="revanced_hide_filter_bar_feed_in_feed_summary_off"/>
+            <string name="revanced_hide_filter_bar_feed_in_search_title"/>
+            <string name="revanced_hide_filter_bar_feed_in_search_summary_on"/>
+            <string name="revanced_hide_filter_bar_feed_in_search_summary_off"/>
+            <string name="revanced_hide_filter_bar_feed_in_related_videos_title"/>
+            <string name="revanced_hide_filter_bar_feed_in_related_videos_summary_on"/>
+            <string name="revanced_hide_filter_bar_feed_in_related_videos_summary_off"/>
+        </patch>
+        <patch id="layout.hide.floatingmicrophone.HideFloatingMicrophoneButtonResourcePatch">
+            <string name="revanced_hide_floating_microphone_button_title"/>
+            <string name="revanced_hide_floating_microphone_button_summary_on"/>
+            <string name="revanced_hide_floating_microphone_button_summary_off"/>
+        </patch>
+        <patch id="layout.hide.fullscreenambientmode.DisableFullscreenAmbientModePatch">
+            <string name="revanced_disable_fullscreen_ambient_mode_title"/>
+            <string name="revanced_disable_fullscreen_ambient_mode_summary_on"/>
+            <string name="revanced_disable_fullscreen_ambient_mode_summary_off"/>
+        </patch>
+        <patch id="layout.hide.infocards.HideInfocardsResourcePatch">
+            <string name="revanced_hide_info_cards_title"/>
+            <string name="revanced_hide_info_cards_summary_on"/>
+            <string name="revanced_hide_info_cards_summary_off"/>
+        </patch>
+        <patch id="layout.hide.loadmorebutton.HideLoadMoreButtonResourcePatch">
+            <string name="revanced_hide_load_more_button_title"/>
+            <string name="revanced_hide_load_more_button_summary_on"/>
+            <string name="revanced_hide_load_more_button_summary_off"/>
+        </patch>
+        <patch id="layout.hide.player.flyoutmenupanel.HidePlayerFlyoutMenuPatch">
+            <string name="video_title"/>
+        </patch>
+        <patch id="layout.hide.rollingnumber.DisableRollingNumberAnimationPatch">
+            <string name="revanced_disable_rolling_number_animations_title"/>
+            <string name="revanced_disable_rolling_number_animations_summary_on"/>
+            <string name="revanced_disable_rolling_number_animations_summary_off"/>
+        </patch>
+        <patch id="layout.hide.seekbar.HideSeekbarPatch">
+            <string name="revanced_hide_seekbar_title"/>
+            <string name="revanced_hide_seekbar_summary_on"/>
+            <string name="revanced_hide_seekbar_summary_off"/>
+            <string name="revanced_hide_seekbar_thumbnail_title"/>
+            <string name="revanced_hide_seekbar_thumbnail_summary_on"/>
+            <string name="revanced_hide_seekbar_thumbnail_summary_off"/>
+        </patch>
+        <patch id="layout.hide.shorts.HideShortsComponentsResourcePatch">
+            <string name="revanced_hide_shorts_home_title"/>
+            <string name="revanced_hide_shorts_home_summary_on"/>
+            <string name="revanced_hide_shorts_home_summary_off"/>
+            <string name="revanced_hide_shorts_subscriptions_title"/>
+            <string name="revanced_hide_shorts_subscriptions_summary_on"/>
+            <string name="revanced_hide_shorts_subscriptions_summary_off"/>
+            <string name="revanced_hide_shorts_search_title"/>
+            <string name="revanced_hide_shorts_search_summary_on"/>
+            <string name="revanced_hide_shorts_search_summary_off"/>
+            <string name="revanced_hide_shorts_join_button_title"/>
+            <string name="revanced_hide_shorts_join_button_summary_on"/>
+            <string name="revanced_hide_shorts_join_button_summary_off"/>
+            <string name="revanced_hide_shorts_subscribe_button_title"/>
+            <string name="revanced_hide_shorts_subscribe_button_summary_on"/>
+            <string name="revanced_hide_shorts_subscribe_button_summary_off"/>
+            <string name="revanced_hide_shorts_subscribe_button_paused_title"/>
+            <string name="revanced_hide_shorts_subscribe_button_paused_summary_on"/>
+            <string name="revanced_hide_shorts_subscribe_button_paused_summary_off"/>
+            <string name="revanced_hide_shorts_thanks_button_title"/>
+            <string name="revanced_hide_shorts_thanks_button_summary_on"/>
+            <string name="revanced_hide_shorts_thanks_button_summary_off"/>
+            <string name="revanced_hide_shorts_like_button_title"/>
+            <string name="revanced_hide_shorts_like_button_summary_on"/>
+            <string name="revanced_hide_shorts_like_button_summary_off"/>
+            <string name="revanced_hide_shorts_dislike_button_title"/>
+            <string name="revanced_hide_shorts_dislike_button_summary_on"/>
+            <string name="revanced_hide_shorts_dislike_button_summary_off"/>
+            <string name="revanced_hide_shorts_comments_button_title"/>
+            <string name="revanced_hide_shorts_comments_button_summary_on"/>
+            <string name="revanced_hide_shorts_comments_button_summary_off"/>
+            <string name="revanced_hide_shorts_remix_button_title"/>
+            <string name="revanced_hide_shorts_remix_button_summary_on"/>
+            <string name="revanced_hide_shorts_remix_button_summary_off"/>
+            <string name="revanced_hide_shorts_share_button_title"/>
+            <string name="revanced_hide_shorts_share_button_summary_on"/>
+            <string name="revanced_hide_shorts_share_button_summary_off"/>
+            <string name="revanced_hide_shorts_info_panel_title"/>
+            <string name="revanced_hide_shorts_info_panel_summary_on"/>
+            <string name="revanced_hide_shorts_info_panel_summary_off"/>
+            <string name="revanced_hide_shorts_channel_bar_title"/>
+            <string name="revanced_hide_shorts_channel_bar_summary_on"/>
+            <string name="revanced_hide_shorts_channel_bar_summary_off"/>
+            <string name="revanced_hide_shorts_video_title_title"/>
+            <string name="revanced_hide_shorts_video_title_summary_on"/>
+            <string name="revanced_hide_shorts_video_title_summary_off"/>
+            <string name="revanced_hide_shorts_sound_metadata_label_title"/>
+            <string name="revanced_hide_shorts_sound_metadata_label_summary_on"/>
+            <string name="revanced_hide_shorts_sound_metadata_label_summary_off"/>
+            <string name="revanced_hide_shorts_full_video_link_label_title"/>
+            <string name="revanced_hide_shorts_full_video_link_label_summary_on"/>
+            <string name="revanced_hide_shorts_full_video_link_label_summary_off"/>
+            <string name="revanced_hide_shorts_sound_button_title"/>
+            <string name="revanced_hide_shorts_sound_button_summary_on"/>
+            <string name="revanced_hide_shorts_sound_button_summary_off"/>
+            <string name="revanced_hide_shorts_navigation_bar_title"/>
+            <string name="revanced_hide_shorts_navigation_bar_summary_on"/>
+            <string name="revanced_hide_shorts_navigation_bar_summary_off"/>
+        </patch>
+        <patch id="layout.hide.suggestedvideoendscreen.DisableSuggestedVideoEndScreenResourcePatch">
+            <string name="revanced_disable_suggested_video_end_screen_title"/>
+            <string name="revanced_disable_suggested_video_end_screen_summary_on"/>
+            <string name="revanced_disable_suggested_video_end_screen_summary_off"/>
+        </patch>
+        <patch id="layout.hide.time.HideTimestampPatch">
+            <string name="revanced_hide_timestamp_title"/>
+            <string name="revanced_hide_timestamp_summary_on"/>
+            <string name="revanced_hide_timestamp_summary_off"/>
+        </patch>
+        <patch id="layout.panels.popup.PlayerPopupPanelsPatch">
+            <string name="revanced_hide_player_popup_panels_title"/>
+            <string name="revanced_hide_player_popup_panels_summary_on"/>
+            <string name="revanced_hide_player_popup_panels_summary_off"/>
+        </patch>
+        <patch id="layout.player.overlay.CustomPlayerOverlayOpacityResourcePatch">
+            <string name="revanced_player_overlay_opacity_title"/>
+            <string name="revanced_player_overlay_opacity_summary"/>
+        </patch>
+        <patch id="layout.returnyoutubedislike.ReturnYouTubeDislikeResourcePatch">
+            <string name="revanced_ryd_settings_title"/>
+            <string name="revanced_ryd_video_likes_hidden_by_video_owner"/>
+            <string name="revanced_ryd_failure_connection_timeout"/>
+            <string name="revanced_ryd_failure_connection_status_code" formatted="false"/>
+            <string name="revanced_ryd_failure_client_rate_limit_requested"/>
+            <string name="revanced_ryd_failure_generic"/>
+            <!-- corner case situation, where user enables RYD while video is playing and then tries
+            to vote for the video -->
+            <string name="revanced_ryd_failure_ryd_enabled_while_playing_video_then_user_voted"/>
+            <string name="revanced_ryd_enable_title"/>
+            <string name="revanced_ryd_enable_summary_on"/>
+            <string name="revanced_ryd_enable_summary_off"/>
+            <string name="revanced_ryd_shorts_title"/>
+            <string name="revanced_ryd_shorts_summary_on"/>
+            <string name="revanced_ryd_shorts_summary_off"/>
+            <string name="revanced_ryd_shorts_summary_disclaimer"/>
+            <string name="revanced_ryd_dislike_percentage_title"/>
+            <string name="revanced_ryd_dislike_percentage_summary_on"/>
+            <string name="revanced_ryd_dislike_percentage_summary_off"/>
+            <string name="revanced_ryd_compact_layout_title"/>
+            <string name="revanced_ryd_compact_layout_summary_on"/>
+            <string name="revanced_ryd_compact_layout_summary_off"/>
+            <string name="revanced_ryd_toast_on_connection_error_title"/>
+            <string name="revanced_ryd_toast_on_connection_error_summary_on"/>
+            <string name="revanced_ryd_toast_on_connection_error_summary_off"/>
+            <string name="revanced_ryd_about"/>
+            <string name="revanced_ryd_attribution_title"/>
+            <string name="revanced_ryd_attribution_summary"> </string>
+            <string name="revanced_ryd_statistics_category_title"/>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeAverage_title"/>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeMin_title"/>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeMax_title"/>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeLast_title"/>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeLast_rate_limit_summary"/>
+            <string name="revanced_ryd_statistics_getFetchCallCount_title"/>
+            <string name="revanced_ryd_statistics_getFetchCallCount_zero_summary"/>
+            <string name="revanced_ryd_statistics_getFetchCallCount_non_zero_summary"/>
+            <string name="revanced_ryd_statistics_getFetchCallNumberOfFailures_title"/>
+            <string name="revanced_ryd_statistics_getFetchCallNumberOfFailures_zero_summary"/>
+            <string name="revanced_ryd_statistics_getFetchCallNumberOfFailures_non_zero_summary"/>
+            <string name="revanced_ryd_statistics_getNumberOfRateLimitRequestsEncountered_title"/>
+            <string name="revanced_ryd_statistics_getNumberOfRateLimitRequestsEncountered_zero_summary"/>
+            <string name="revanced_ryd_statistics_getNumberOfRateLimitRequestsEncountered_non_zero_summary"/>
+            <string name="revanced_ryd_statistics_millisecond_text"/>
+        </patch>
+        <patch id="layout.searchbar.WideSearchbarPatch">
+            <string name="revanced_wide_searchbar_title"/>
+            <string name="revanced_wide_searchbar_summary_on"/>
+            <string name="revanced_wide_searchbar_summary_off"/>
+        </patch>
+        <patch id="layout.seekbar.RestoreOldSeekbarThumbnailsPatch">
+            <string name="revanced_restore_old_seekbar_thumbnails_title"/>
+            <string name="revanced_restore_old_seekbar_thumbnails_summary_on"/>
+            <string name="revanced_restore_old_seekbar_thumbnails_summary_off"/>
+        </patch>
+        <patch id="layout.sponsorblock.SponsorBlockResourcePatch">
+            <string name="revanced_sb_settings_title"/>
+            <string name="revanced_sb_enable_sb"/>
+            <string name="revanced_sb_enable_sb_sum"/>
+            <string name="revanced_sb_appearance_category"/>
+            <string name="revanced_sb_enable_voting"/>
+            <string name="revanced_sb_enable_voting_sum_on"/>
+            <string name="revanced_sb_enable_voting_sum_off"/>
+            <string name="revanced_sb_enable_compact_skip_button"/>
+            <string name="revanced_sb_enable_compact_skip_button_sum_on"/>
+            <string name="revanced_sb_enable_compact_skip_button_sum_off"/>
+            <string name="revanced_sb_enable_auto_hide_skip_segment_button"/>
+            <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on"/>
+            <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off"/>
+            <string name="revanced_sb_general_skiptoast"/>
+            <string name="revanced_sb_general_skiptoast_sum_on"> </string>
+            <string name="revanced_sb_general_skiptoast_sum_off"> </string>
+            <string name="revanced_sb_general_time_without"/>
+            <string name="revanced_sb_general_time_without_sum_on"/>
+            <string name="revanced_sb_general_time_without_sum_off"/>
+            <string name="revanced_sb_create_segment_category"/>
+            <string name="revanced_sb_enable_create_segment"/>
+            <string name="revanced_sb_enable_create_segment_sum_on"/>
+            <string name="revanced_sb_enable_create_segment_sum_off"/>
+            <string name="revanced_sb_general_adjusting"/>
+            <string name="revanced_sb_general_adjusting_sum"/>
+            <string name="revanced_sb_general_adjusting_invalid"/>
+            <string name="revanced_sb_guidelines_preference_title"/>
+            <string name="revanced_sb_guidelines_preference_sum"/>
+            <string name="revanced_sb_guidelines_popup_title"/>
+            <string name="revanced_sb_guidelines_popup_content"/>
+            <string name="revanced_sb_guidelines_popup_already_read"/>
+            <string name="revanced_sb_guidelines_popup_open"/>
+            <string name="revanced_sb_general"/>
+            <string name="revanced_sb_toast_on_connection_error_title"/>
+            <string name="revanced_sb_toast_on_connection_error_summary_on"/>
+            <string name="revanced_sb_toast_on_connection_error_summary_off"/>
+            <string name="revanced_sb_general_skipcount"/>
+            <string name="revanced_sb_general_skipcount_sum_on"> </string>
+            <string name="revanced_sb_general_skipcount_sum_off"/>
+            <string name="revanced_sb_general_min_duration"/>
+            <string name="revanced_sb_general_min_duration_sum"> </string>
+            <string name="revanced_sb_general_uuid"/>
+            <string name="revanced_sb_general_uuid_sum">  </string>
+            <string name="revanced_sb_general_uuid_invalid"/>
+            <string name="revanced_sb_general_api_url"/>
+            <string name="revanced_sb_general_api_url_sum"> </string>
+            <string name="revanced_sb_api_url_reset"/>
+            <string name="revanced_sb_api_url_invalid"/>
+            <string name="revanced_sb_api_url_changed"/>
+            <string name="revanced_sb_settings_ie"/>
+            <string name="revanced_sb_settings_copy"/>
+            <string name="revanced_sb_settings_ie_sum"/>
+            <string name="revanced_sb_settings_ie_sum_warning"> </string>
+            <string name="revanced_sb_settings_import_successful"/>
+            <string name="revanced_sb_settings_import_failed"/>
+            <string name="revanced_sb_settings_export_failed"/>
+            <string name="revanced_sb_settings_revanced_export_user_id_warning"/>
+            <string name="revanced_sb_settings_revanced_export_user_id_warning_dismiss"/>
+            <string name="revanced_sb_diff_segments"/>
+            <string name="revanced_sb_segments_sponsor"/>
+            <string name="revanced_sb_segments_sponsor_sum"> </string>
+            <string name="revanced_sb_segments_selfpromo"/>
+            <string name="revanced_sb_segments_selfpromo_sum"> </string>
+            <string name="revanced_sb_segments_interaction"/>
+            <string name="revanced_sb_segments_interaction_sum"> </string>
+            <string name="revanced_sb_segments_highlight"/>
+            <string name="revanced_sb_segments_highlight_sum"/>
+            <string name="revanced_sb_segments_intro"/>
+            <string name="revanced_sb_segments_intro_sum">  </string>
+            <string name="revanced_sb_segments_outro"/>
+            <string name="revanced_sb_segments_outro_sum"> </string>
+            <string name="revanced_sb_segments_preview"/>
+            <string name="revanced_sb_segments_preview_sum"/>
+            <string name="revanced_sb_segments_filler"/>
+            <string name="revanced_sb_segments_filler_sum"> </string>
+            <string name="revanced_sb_segments_nomusic"/>
+            <string name="revanced_sb_segments_nomusic_sum"> </string>
+            <string name="revanced_sb_skip_button_compact"/>
+            <string name="revanced_sb_skip_button_compact_highlight"/>
+            <string name="revanced_sb_skip_button_sponsor"/>
+            <string name="revanced_sb_skip_button_selfpromo"/>
+            <string name="revanced_sb_skip_button_interaction"/>
+            <string name="revanced_sb_skip_button_highlight"/>
+            <string name="revanced_sb_skip_button_intro_beginning"/>
+            <string name="revanced_sb_skip_button_intro_middle"/>
+            <string name="revanced_sb_skip_button_intro_end"/>
+            <string name="revanced_sb_skip_button_outro"/>
+            <string name="revanced_sb_skip_button_preview_beginning"/>
+            <string name="revanced_sb_skip_button_preview_middle"/>
+            <string name="revanced_sb_skip_button_preview_end"/>
+            <string name="revanced_sb_skip_button_filler"/>
+            <string name="revanced_sb_skip_button_nomusic"/>
+            <string name="revanced_sb_skip_button_unsubmitted"/>
+            <string name="revanced_sb_skipped_sponsor"/>
+            <string name="revanced_sb_skipped_selfpromo"/>
+            <string name="revanced_sb_skipped_interaction"/>
+            <string name="revanced_sb_skipped_highlight"/>
+            <string name="revanced_sb_skipped_intro_beginning"/>
+            <string name="revanced_sb_skipped_intro_middle"/>
+            <string name="revanced_sb_skipped_intro_end"/>
+            <string name="revanced_sb_skipped_outro"/>
+            <string name="revanced_sb_skipped_preview_beginning"/>
+            <string name="revanced_sb_skipped_preview_middle"/>
+            <string name="revanced_sb_skipped_preview_end"/>
+            <string name="revanced_sb_skipped_filler"/>
+            <string name="revanced_sb_skipped_nomusic"/>
+            <string name="revanced_sb_skipped_unsubmitted"/>
+            <string name="revanced_sb_skipped_multiple_segments"/>
+            <string name="revanced_sb_skip_automatically"/>
+            <string name="revanced_sb_skip_automatically_once"/>
+            <string name="revanced_sb_skip_showbutton"/>
+            <string name="revanced_sb_skip_seekbaronly"/>
+            <string name="revanced_sb_skip_ignore"/>
+            <string name="revanced_sb_submit_failed_invalid" formatted="false"/>
+            <string name="revanced_sb_submit_failed_timeout"/>
+            <string name="revanced_sb_submit_failed_unknown_error" formatted="false"/>
+            <string name="revanced_sb_submit_failed_rate_limit"/>
+            <string name="revanced_sb_submit_failed_forbidden" formatted="false"/>
+            <string name="revanced_sb_submit_failed_duplicate"/>
+            <string name="revanced_sb_submit_succeeded"/>
+            <string name="revanced_sb_sponsorblock_connection_failure_generic"/>
+            <string name="revanced_sb_sponsorblock_connection_failure_status" formatted="false"/>
+            <string name="revanced_sb_sponsorblock_connection_failure_timeout"/>
+            <string name="revanced_sb_vote_failed_timeout"/>
+            <string name="revanced_sb_vote_failed_unknown_error" formatted="false"/>
+            <string name="revanced_sb_vote_failed_forbidden" formatted="false"/>
+            <string name="revanced_sb_vote_upvote"/>
+            <string name="revanced_sb_vote_downvote"/>
+            <string name="revanced_sb_vote_category"/>
+            <string name="revanced_sb_vote_no_segments"/>
+            <string name="revanced_sb_new_segment_choose_category"/>
+            <string name="revanced_sb_new_segment_disabled_category"> </string>
+            <string name="revanced_sb_new_segment_title"/>
+            <string name="revanced_sb_new_segment_mark_time_as_question" formatted="false"/>
+            <string name="revanced_sb_new_segment_mark_start"/>
+            <string name="revanced_sb_new_segment_mark_end"/>
+            <string name="revanced_sb_new_segment_now"/>
+            <string name="revanced_sb_new_segment_time_start"/>
+            <string name="revanced_sb_new_segment_time_end"/>
+            <string name="revanced_sb_new_segment_confirm_title"/>
+            <string name="revanced_sb_new_segment_confirm_content" formatted="false"/>
+            <string name="revanced_sb_new_segment_start_is_before_end"/>
+            <string name="revanced_sb_new_segment_mark_locations_first"/>
+            <string name="revanced_sb_new_segment_preview_segment_first"/>
+            <string name="revanced_sb_new_segment_edit_by_hand_title"/>
+            <string name="revanced_sb_new_segment_edit_by_hand_content"/>
+            <string name="revanced_sb_new_segment_edit_by_hand_parse_error"/>
+            <string name="revanced_sb_stats"/>
+            <string name="revanced_sb_stats_connection_failure"/>
+            <string name="revanced_sb_stats_loading"/>
+            <string name="revanced_sb_stats_sb_disabled"/>
+            <string name="revanced_sb_stats_username" formatted="false"/>
+            <string name="revanced_sb_stats_username_change"/>
+            <string name="revanced_sb_stats_username_change_unknown_error" formatted="false"/>
+            <string name="revanced_sb_stats_username_changed"/>
+            <string name="revanced_sb_stats_reputation" formatted="false"/>
+            <string name="revanced_sb_stats_submissions" formatted="false"/>
+            <string name="revanced_sb_stats_saved_zero"/>
+            <string name="revanced_sb_stats_saved" formatted="false"/>
+            <string name="revanced_sb_stats_saved_sum_zero"/>
+            <string name="revanced_sb_stats_saved_sum" formatted="false"/>
+            <string name="revanced_sb_stats_self_saved" formatted="false"/>
+            <string name="revanced_sb_stats_self_saved_sum" formatted="false"/>
+            <string name="revanced_sb_stats_self_saved_reset_title"/>
+            <string name="revanced_sb_stats_saved_hour_format" formatted="false"/>
+            <string name="revanced_sb_stats_saved_minute_format" formatted="false"/>
+            <string name="revanced_sb_stats_saved_second_format" formatted="false"/>
+            <string name="revanced_sb_color_dot_label"/>
+            <string name="revanced_sb_color_changed"/>
+            <string name="revanced_sb_color_reset"/>
+            <string name="revanced_sb_color_invalid"/>
+            <string name="revanced_sb_reset_color"/>
+            <string name="revanced_sb_reset"/>
+            <string name="revanced_sb_about"/>
+            <string name="revanced_sb_about_api"/>
+            <string name="revanced_sb_about_api_sum"> </string>
+        </patch>
+        <patch id="layout.spoofappversion.SpoofAppVersionPatch">
+            <string name="revanced_spoof_app_version_title"/>
+            <string name="revanced_spoof_app_version_summary_on"/>
+            <string name="revanced_spoof_app_version_summary_off"/>
+            <string name="revanced_spoof_app_version_user_dialog_message"/>
+            <string name="revanced_spoof_app_version_target_title"/>
+            <string name="revanced_spoof_app_version_target_entry_1"/>
+            <string name="revanced_spoof_app_version_target_entry_2"/>
+            <string name="revanced_spoof_app_version_target_entry_3"/>
+            <string name="revanced_spoof_app_version_target_entry_4"/>
+            <string name="revanced_spoof_app_version_target_entry_5"/>
+        </patch>
+        <patch id="layout.startpage.ChangeStartPagePatch">
+            <string name="revanced_start_page_title"/>
+            <string name="revanced_start_page_entry_0"/>
+            <string name="revanced_start_page_entry_1"/>
+            <string name="revanced_start_page_entry_2"/>
+            <string name="revanced_start_page_entry_3"/>
+            <string name="revanced_start_page_entry_4"/>
+            <string name="revanced_start_page_entry_5"/>
+            <string name="revanced_start_page_entry_6"/>
+            <string name="revanced_start_page_entry_7"/>
+            <string name="revanced_start_page_entry_8"/>
+            <string name="revanced_start_page_entry_9"/>
+        </patch>
+        <patch id="layout.startupshortsreset.DisableResumingShortsOnStartupPatch">
+            <string name="revanced_disable_resuming_shorts_player_title"/>
+            <string name="revanced_disable_resuming_shorts_player_summary_on"/>
+            <string name="revanced_disable_resuming_shorts_player_summary_off"/>
+        </patch>
+        <patch id="layout.tablet.EnableTabletLayoutPatch">
+            <string name="revanced_tablet_layout_title"/>
+            <string name="layout_summary"/>
+            <string name="revanced_tablet_layout_summary_on"/>
+            <string name="revanced_tablet_layout_summary_off"/>
+            <string name="revanced_tablet_layout_user_dialog_message"/>
+        </patch>
+        <patch id="layout.tabletminiplayer.TabletMiniPlayerPatch">
+            <string name="revanced_tablet_miniplayer_title"/>
+            <string name="revanced_tablet_miniplayer_summary_on"/>
+            <string name="revanced_tablet_miniplayer_summary_off"/>
+        </patch>
+        <patch id="layout.theme.ThemeBytecodePatch">
+            <string name="revanced_gradient_loading_screen_title"/>
+            <string name="revanced_gradient_loading_screen_summary_on"/>
+            <string name="revanced_gradient_loading_screen_summary_off"/>
+        </patch>
+        <patch id="layout.theme.ThemeResourcePatch">
+            <string name="revanced_seekbar_custom_color_title"/>
+            <string name="revanced_seekbar_custom_color_summary_on"/>
+            <string name="revanced_seekbar_custom_color_summary_off"/>
+            <string name="revanced_seekbar_custom_color_value_title"/>
+            <string name="revanced_seekbar_custom_color_value_summary"/>
+            <string name="revanced_seekbar_custom_color_invalid"> </string>
+        </patch>
+        <patch id="layout.thumbnails.AlternativeThumbnailsPatch">
+            <string name="revanced_alt_thumbnail_home_title"/>
+            <string name="revanced_alt_thumbnail_subscription_title"/>
+            <string name="revanced_alt_thumbnail_library_title"/>
+            <string name="revanced_alt_thumbnail_player_title"/>
+            <string name="revanced_alt_thumbnail_search_title"/>
+            <string name="revanced_alt_thumbnail_options_entry_1"/>
+            <string name="revanced_alt_thumbnail_options_entry_2"/>
+            <string name="revanced_alt_thumbnail_options_entry_3"/>
+            <string name="revanced_alt_thumbnail_options_entry_4"/>
+            <string name="revanced_alt_thumbnail_dearrow_about_title"/>
+            <string name="revanced_alt_thumbnail_dearrow_about_summary">  </string>
+            <string name="revanced_alt_thumbnail_dearrow_connection_toast_title"/>
+            <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_on"/>
+            <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_off"/>
+            <string name="revanced_alt_thumbnail_dearrow_api_url_title"/>
+            <string name="revanced_alt_thumbnail_dearrow_api_url_summary"/>
+            <string name="revanced_alt_thumbnail_stills_about_title"/>
+            <string name="revanced_alt_thumbnail_stills_about_summary"> </string>
+            <string name="revanced_alt_thumbnail_stills_fast_title"/>
+            <string name="revanced_alt_thumbnail_stills_fast_summary_on"> </string>
+            <string name="revanced_alt_thumbnail_stills_fast_summary_off"/>
+            <string name="revanced_alt_thumbnail_stills_time_title"/>
+            <string name="revanced_alt_thumbnail_stills_time_entry_1"/>
+            <string name="revanced_alt_thumbnail_stills_time_entry_2"/>
+            <string name="revanced_alt_thumbnail_stills_time_entry_3"/>
+            <string name="revanced_alt_thumbnail_dearrow_error"/>
+            <string name="revanced_alt_thumbnail_dearrow_error_generic"/>
+        </patch>
+        <patch id="misc.announcements.AnnouncementsPatch">
+            <string name="revanced_announcements_title"/>
+            <string name="revanced_announcements_summary_on"/>
+            <string name="revanced_announcements_summary_off"/>
+            <string name="revanced_announcements_enabled_summary"/>
+            <string name="revanced_announcements_connection_failed"/>
+            <string name="revanced_announcements_dialog_dismiss"/>
+        </patch>
+        <patch id="misc.autorepeat.AutoRepeatPatch">
+            <string name="revanced_auto_repeat_title"/>
+            <string name="revanced_auto_repeat_summary_on"/>
+            <string name="revanced_auto_repeat_summary_off"/>
+        </patch>
+        <patch id="misc.dimensions.spoof.SpoofDeviceDimensionsPatch">
+            <string name="revanced_spoof_device_dimensions_title"/>
+            <string name="revanced_spoof_device_dimensions_summary_on"/>
+            <string name="revanced_spoof_device_dimensions_summary_off"/>
+        </patch>
+        <patch id="misc.fix.playback.SpoofSignaturePatch">
+            <string name="revanced_spoof_signature_verification_screen_title"/>
+            <string name="revanced_spoof_signature_verification_screen_summary"/>
+            <string name="revanced_spoof_signature_verification_enabled_title"/>
+            <string name="revanced_spoof_signature_verification_enabled_summary_on"/>
+            <string name="revanced_spoof_signature_verification_enabled_summary_off"/>
+            <string name="revanced_spoof_signature_verification_enabled_user_dialog_message"/>
+            <string name="revanced_spoof_signature_in_feed_enabled_title"/>
+            <string name="revanced_spoof_signature_in_feed_enabled_summary_on"/>
+            <string name="revanced_spoof_signature_in_feed_enabled_summary_off"/>
+            <string name="revanced_spoof_storyboard_title"/>
+            <string name="revanced_spoof_storyboard_summary_on"/>
+            <string name="revanced_spoof_storyboard_summary_off"/>
+            <string name="revanced_spoof_storyboard_timeout"/>
+            <string name="revanced_spoof_storyboard_io_exception"/>
+        </patch>
+        <patch id="misc.gms.GmsCoreSupportResourcePatch">
+            <string name="microg_settings_title"/>
+            <string name="microg_settings_summary"/>
+        </patch>
+        <patch id="misc.links.BypassURLRedirectsPatch">
+            <string name="revanced_bypass_url_redirects_title"/>
+            <string name="revanced_bypass_url_redirects_summary_on"/>
+            <string name="revanced_bypass_url_redirects_summary_off"/>
+        </patch>
+        <patch id="misc.links.OpenLinksExternallyPatch">
+            <string name="revanced_external_browser_title"/>
+            <string name="revanced_external_browser_summary_on"/>
+            <string name="revanced_external_browser_summary_off"/>
+        </patch>
+        <patch id="misc.minimizedplayback.MinimizedPlaybackPatch">
+            <string name="revanced_minimized_playback_title"/>
+            <string name="revanced_minimized_playback_summary"/>
+        </patch>
+        <patch id="misc.privacy.RemoveTrackingQueryParameterPatch">
+            <string name="revanced_remove_tracking_query_parameter_title"/>
+            <string name="revanced_remove_tracking_query_parameter_summary_on"/>
+            <string name="revanced_remove_tracking_query_parameter_summary_off"/>
+        </patch>
+        <patch id="misc.zoomhaptics.ZoomHapticsPatch">
+            <string name="revanced_disable_zoom_haptics_title"/>
+            <string name="revanced_disable_zoom_haptics_summary_on"/>
+            <string name="revanced_disable_zoom_haptics_summary_off"/>
+        </patch>
+        <patch id="video.hdrbrightness.HDRBrightnessPatch">
+            <string name="revanced_hdr_auto_brightness_title"/>
+            <string name="revanced_hdr_auto_brightness_summary_on"/>
+            <string name="revanced_hdr_auto_brightness_summary_off"/>
+        </patch>
+        <patch id="video.quality.RememberVideoQualityPatch">
+            <string name="revanced_video_quality_default_entry_1"/>
+            <string name="revanced_video_quality_default_entry_2"/>
+            <string name="revanced_video_quality_default_entry_3"/>
+            <string name="revanced_video_quality_default_entry_4"/>
+            <string name="revanced_video_quality_default_entry_5"/>
+            <string name="revanced_video_quality_default_entry_6"/>
+            <string name="revanced_video_quality_default_entry_7"/>
+            <string name="revanced_video_quality_default_entry_8"/>
+            <string name="revanced_video_quality_default_entry_9"/>
+            <string name="revanced_remember_video_quality_last_selected_title"/>
+            <string name="revanced_remember_video_quality_last_selected_summary_on"/>
+            <string name="revanced_remember_video_quality_last_selected_summary_off"/>
+            <string name="revanced_video_quality_default_wifi_title"/>
+            <string name="revanced_video_quality_default_mobile_title"/>
+            <string name="revanced_remember_video_quality_mobile"/>
+            <string name="revanced_remember_video_quality_wifi"/>
+            <string name="revanced_remember_video_quality_toast" formatted="false"/>
+        </patch>
+        <patch id="video.speed.custom.CustomPlaybackSpeedPatch">
+            <string name="revanced_custom_playback_speeds_title"/>
+            <string name="revanced_custom_playback_speeds_summary"/>
+            <string name="revanced_custom_playback_speeds_invalid" formatted="false"/>
+            <string name="revanced_custom_playback_speeds_parse_exception"> </string>
+        </patch>
+        <patch id="video.speed.remember.RememberPlaybackSpeedPatch">
+            <string name="revanced_remember_playback_speed_last_selected_title"/>
+            <string name="revanced_remember_playback_speed_last_selected_summary_on"/>
+            <string name="revanced_remember_playback_speed_last_selected_summary_off"/>
+            <string name="revanced_playback_speed_default_title"/>
+            <string name="revanced_remember_playback_speed_toast" formatted="false"/>
+        </patch>
+        <patch id="video.videoqualitymenu.RestoreOldVideoQualityMenuResourcePatch">
+            <string name="revanced_restore_old_video_quality_menu_title"/>
+            <string name="revanced_restore_old_video_quality_menu_summary_on"/>
+            <string name="revanced_restore_old_video_quality_menu_summary_off"/>
+        </patch>
+        <patch id="interaction.seekbar.EnableSlideToSeekPatch">
+            <string name="revanced_slide_to_seek_title"/>
+            <string name="revanced_slide_to_seek_summary_on"/>
+            <string name="revanced_slide_to_seek_summary_off"/>
+        </patch>
+    </app>
+    <app id="twitch">
+        <patch id="ad.audio.AudioAdsPatch">
+            <string name="revanced_block_audio_ads_title"/>
+            <string name="revanced_block_audio_ads_summary_on"/>
+            <string name="revanced_block_audio_ads_summary_off"/>
+        </patch>
+        <patch id="ad.embedded.EmbeddedAdsPatch">
+            <string name="revanced_embedded_ads_service_unavailable">  </string>
+            <string name="revanced_embedded_ads_service_failed">  </string>
+            <string name="revanced_block_embedded_ads_title"/>
+            <string name="revanced_block_embedded_ads_entry_1"/>
+            <string name="revanced_block_embedded_ads_entry_2"/>
+            <string name="revanced_block_embedded_ads_entry_3"/>
+        </patch>
+        <patch id="ad.video.VideoAdsPatch">
+            <string name="revanced_block_video_ads_title"/>
+            <string name="revanced_block_video_ads_summary_on"/>
+            <string name="revanced_block_video_ads_summary_off"/>
+        </patch>
+        <patch id="chat.antidelete.ShowDeletedMessagesPatch">
+            <string name="revanced_deleted_msg"/>
+            <string name="revanced_show_deleted_messages_title"/>
+            <string name="revanced_show_deleted_messages_entry_1"/>
+            <string name="revanced_show_deleted_messages_entry_2"/>
+            <string name="revanced_show_deleted_messages_entry_3"/>
+        </patch>
+        <patch id="chat.autoclaim.AutoClaimChannelPointsPatch">
+            <string name="revanced_auto_claim_channel_points_title"/>
+            <string name="revanced_auto_claim_channel_points_summary_on"/>
+            <string name="revanced_auto_claim_channel_points_summary_off"/>
+        </patch>
+        <patch id="debug.DebugModePatch">
+            <string name="revanced_twitch_debug_mode_title"/>
+            <string name="revanced_twitch_debug_mode_summary_on"/>
+            <string name="revanced_twitch_debug_mode_summary_off"/>
+        </patch>
+        <patch id="misc.settings.SettingsPatch">
+            <string name="revanced_settings"/>
+            <string name="revanced_ads_screen_title"/>
+            <string name="revanced_ads_screen_summary"/>
+            <string name="revanced_chat_screen_title"/>
+            <string name="revanced_chat_screen_summary"/>
+            <string name="revanced_misc_screen_title"/>
+            <string name="revanced_misc_screen_summary"/>
+            <string name="revanced_general_category_title"/>
+            <string name="revanced_other_category_title"/>
+            <string name="revanced_client_ads_category_title"/>
+            <string name="revanced_surestream_ads_category_title"/>
+            <string name="revanced_debug_title"/>
+            <string name="revanced_debug_summary_on"/>
+            <string name="revanced_debug_summary_off"/>
+        </patch>
+    </app>
+</resources>

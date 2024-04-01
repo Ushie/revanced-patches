@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <app id="shared">
+        <patch id="misc.settings.BaseSettingsResourcePatch">
+            <string name="revanced_settings_title">ReVanced</string>
+            <string name="revanced_settings_confirm_user_dialog_title">Θέλετε να προχωρήσετε;</string>
+            <string name="revanced_settings_reset">Επαναφορά</string>
+            <string name="revanced_settings_restart_title">Ανανέωση και επανεκκίνηση</string>
+            <string name="revanced_settings_restart">Επανεκκίνηση</string>
+            <string name="revanced_settings_import">Εισαγωγή</string>
+            <string name="revanced_settings_import_copy">Αντιγραφή</string>
+            <string name="revanced_settings_import_reset">Οι ρυθμίσεις του ReVanced επαναφέρθηκαν</string>
+            <string name="revanced_settings_import_success">Έγινε εισαγωγή %d ρυθμίσεων</string>
+            <string name="revanced_settings_import_failure_parse">Η εισαγωγή απέτυχε: %s</string>
+        </patch>
+        <patch id="misc.gms.BaseGmsCoreSupportResourcePatch">
+            <string name="gms_core_toast_not_installed_message">Το GmsCore δεν είναι εγκατεστημένο. Εγκαταστήστε το.</string>
+            <string name="gms_core_toast_not_whitelisted_message">Ακολουθήστε τον οδηγό \"Don\'t kill my app\" για το MicroG GmsCore.</string>
+            <string name="gms_core_dialog_title">Απαιτείται ενέργεια</string>
+            <string name="gms_core_dialog_not_whitelisted_using_battery_optimizations_message">Το MicroG GmsCore δεν είναι στη λίστα εξαιρουμένων από τη βελτιστοποίηση μπαταρίας.\n\nΑκολουθήστε τον οδηγό \"Don\'t kill my app\" για το MicroG GmsCore.</string>
+            <string name="gms_core_dialog_not_whitelisted_not_allowed_in_background_message">Το MicroG GmsCore δεν έχει άδεια να τρέχει στο παρασκήνιο.\n\nΑκολουθήστε τον οδηγό \"Don\'t kill my app\" για το MicroG GmsCore.</string>
+            <string name="gms_core_dialog_ok_button_text">Άνοιγμα ιστοσελίδας</string>
+        </patch>
+    </app>
+    <app id="youtube">
+        <patch id="misc.settings.SettingsResourcePatch">
+            <string name="revanced_settings">ReVanced</string>
+            <string name="revanced_pref_import_export_title">Εισαγωγή / Εξαγωγή</string>
+            <string name="revanced_pref_import_export_summary">Εισαγωγή / Εξαγωγή ρυθμίσεων του ReVanced</string>
+        </patch>
+        <patch id="misc.settings.SettingsPatch">
+            <string name="revanced_settings_screen_01_ads_title">Διαφημίσεις</string>
+            <string name="revanced_settings_screen_02_alt_thumbnails_title">Εναλλακτικές μικρογραφίες</string>
+            <string name="revanced_settings_screen_03_feed_title">Ροή</string>
+            <string name="revanced_settings_screen_04_player_title">Οθόνη αναπαραγωγής</string>
+            <string name="revanced_settings_screen_05_general_title">Γενική διάταξη</string>
+            <string name="revanced_settings_screen_06_shorts_title">Shorts</string>
+            <string name="revanced_settings_screen_07_seekbar_title">Γραμμή προόδου βίντεο</string>
+            <string name="revanced_settings_screen_08_swipe_controls_title">Έλεγχος με σάρωση οθόνης</string>
+            <string name="revanced_settings_screen_11_misc_title">Διάφορα</string>
+            <string name="revanced_settings_screen_12_video_title">Βίντεο</string>
+        </patch>
+        <patch id="misc.debugging.DebuggingPatch">
+            <string name="revanced_debug_screen_title">Εντοπισμός σφαλμάτων</string>
+            <string name="revanced_debug_screen_summary">Ενεργοποίηση ή απενεργοποίηση επιλογών εντοπισμού σφαλμάτων</string>
+            <string name="revanced_debug_title">Καταγραφή εντοπισμού σφαλμάτων</string>
+            <string name="revanced_debug_summary_on">Η καταγραφή σφαλμάτων είναι ενεργή</string>
+            <string name="revanced_debug_summary_off">Η καταγραφή σφαλμάτων είναι ανενεργή</string>
+            <string name="revanced_debug_protobuffer_title">Buffer πρωτοκόλλου καταγραφής σφαλμάτων</string>
+            <string name="revanced_debug_protobuffer_summary_on">Τα αρχεία καταγραφής σφαλμάτων περιλαμβάνουν το proto buffer</string>
+            <string name="revanced_debug_protobuffer_summary_off">Τα αρχεία καταγραφής σφαλμάτων δεν περιλαμβάνουν το proto buffer</string>
+            <string name="revanced_debug_stacktrace_title">Καταγραφή ιχνών στοίβας</string>
+            <string name="revanced_debug_stacktrace_summary_on">Τα αρχεία καταγραφής σφαλμάτων περιλαμβάνουν ίχνη στοίβας</string>
+            <string name="revanced_debug_stacktrace_summary_off">Τα αρχεία καταγραφής σφαλμάτων δεν περιλαμβάνουν ίχνη στοίβας</string>
+            <string name="revanced_debug_toast_on_error_title">Εμφάνιση μηνυμάτων σφαλμάτων ReVanced</string>
+            <string name="revanced_debug_toast_on_error_summary_on">Να εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης σε περιπτώσεις σφαλμάτων</string>
+            <string name="revanced_debug_toast_on_error_summary_off">Να μην εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης σε περιπτώσεις σφαλμάτων</string>
+            <string name="revanced_debug_toast_on_error_user_dialog_message">Η απενεργοποίηση των μηνυμάτων σφαλμάτων κρύβει όλες τις ειδοποιήσεις σφαλμάτων που αφορούν το ReVanced.\n\nΔεν θα ειδοποιήστε για τυχόν απρόβλεπτα γεγονότα.</string>
+        </patch>
+        <patch id="layout.hide.general.HideLayoutComponentsPatch">
+            <string name="revanced_hide_gray_separator_title">Γκρι διαχωριστικά</string>
+            <string name="revanced_hide_gray_separator_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_gray_separator_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_join_membership_button_title">Κουμπί \'Συμμετοχή\'</string>
+            <string name="revanced_hide_join_membership_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_join_membership_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_channel_watermark_title">Υδατογράφημα καναλιού</string>
+            <string name="revanced_hide_channel_watermark_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_channel_watermark_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_for_you_shelf_title">Κατηγορία \'Για εσάς\' στη σελίδα καναλιού</string>
+            <string name="revanced_hide_for_you_shelf_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_for_you_shelf_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_notify_me_button_title">Κουμπί \'Ειδοποίησε με\'</string>
+            <string name="revanced_hide_notify_me_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_notify_me_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_timed_reactions_title">Συγχρονισμένες αντιδράσεις</string>
+            <string name="revanced_hide_timed_reactions_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_timed_reactions_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_search_result_recommendations_title">Κατηγορία \'Άλλοι χρήστες παρακολούθησαν επίσης\'</string>
+            <string name="revanced_hide_search_result_recommendations_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_search_result_recommendations_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_search_result_shelf_header_title">Κατηγορία αποτελεσμάτων αναζήτησης</string>
+            <string name="revanced_hide_search_result_shelf_header_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_search_result_shelf_header_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_channel_guidelines_title">Οδηγίες καναλιού</string>
+            <string name="revanced_hide_channel_guidelines_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_channel_guidelines_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_expandable_chip_title">Επεκτάσιμα πλαίσια κάτω από τα βίντεο</string>
+            <string name="revanced_hide_expandable_chip_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_expandable_chip_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_video_quality_menu_footer_title">Υποσέλιδο μενού ποιότητας βίντεο</string>
+            <string name="revanced_hide_video_quality_menu_footer_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_video_quality_menu_footer_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_community_posts_title">Δημοσιεύσεις κοινότητας</string>
+            <string name="revanced_hide_community_posts_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_community_posts_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_compact_banner_title">Αναγγελίες κάτω από τα βίντεο</string>
+            <string name="revanced_hide_compact_banner_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_compact_banner_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_movies_section_title">Ενότητα ταινιών</string>
+            <string name="revanced_hide_movies_section_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_movies_section_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_feed_survey_title">Έρευνες στη ροή</string>
+            <string name="revanced_hide_feed_survey_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_feed_survey_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_community_guidelines_title">Οδηγίες κοινότητας</string>
+            <string name="revanced_hide_community_guidelines_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_community_guidelines_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_subscribers_community_guidelines_title">Οδηγίες κοινότητας συνδρομητών</string>
+            <string name="revanced_hide_subscribers_community_guidelines_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_subscribers_community_guidelines_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_channel_member_shelf_title">Κατηγορία συνδρομητών καναλιού</string>
+            <string name="revanced_hide_channel_member_shelf_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_channel_member_shelf_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_emergency_box_title">Κουτιά έκτακτης ανάγκης</string>
+            <string name="revanced_hide_emergency_box_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_emergency_box_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_info_panels_title">Πάνελ πληροφοριών</string>
+            <string name="revanced_hide_info_panels_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_info_panels_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_medical_panels_title">Ιατρικά πάνελ</string>
+            <string name="revanced_hide_medical_panels_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_medical_panels_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_channel_bar_title">Γραμμή καναλιού</string>
+            <string name="revanced_hide_channel_bar_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_channel_bar_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_quick_actions_title">Γρήγορες ενέργειες σε πλήρη οθόνη</string>
+            <string name="revanced_hide_quick_actions_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_quick_actions_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_related_videos_title">Σχετικά βίντεο στις γρήγορες ενέργειες</string>
+            <string name="revanced_hide_related_videos_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_related_videos_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_image_shelf_title">Ενότητα εικόνων στα αποτελέσματα αναζήτησης</string>
+            <string name="revanced_hide_image_shelf_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_image_shelf_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_latest_posts_ads_title">Τελευταίες δημοσιεύσεις</string>
+            <string name="revanced_hide_latest_posts_ads_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_latest_posts_ads_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_mix_playlists_title">Λίστες αναπαραγωγής μίξης</string>
+            <string name="revanced_hide_mix_playlists_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_mix_playlists_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_artist_cards_title">Κάρτες καλλιτεχνών</string>
+            <string name="revanced_hide_artist_cards_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_artist_cards_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_chips_shelf_title">Κατηγορία σχετιζόμενων λέξεων</string>
+            <string name="revanced_hide_chips_shelf_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_chips_shelf_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_info_cards_section_title">Ενότητα καρτών πληροφοριών</string>
+            <string name="revanced_hide_info_cards_section_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_info_cards_section_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_chapters_title">Κεφάλαια βίντεο</string>
+            <string name="revanced_hide_chapters_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_chapters_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_game_section_title">Ενότητα παιχνιδιού</string>
+            <string name="revanced_hide_game_section_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_game_section_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_music_section_title">Ενότητα μουσικής</string>
+            <string name="revanced_hide_music_section_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_music_section_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_podcast_section_title">Ενότητα εκπομπής</string>
+            <string name="revanced_hide_podcast_section_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_podcast_section_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_transcript_section_title">Ενότητα απομαγνητοφώνησης</string>
+            <string name="revanced_hide_transcript_section_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_transcript_section_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_description_components_screen_title">Περιγραφή βίντεο</string>
+            <string name="revanced_hide_description_components_screen_summary">Απόκρυψη η εμφάνιση στοιχείων περιγραφής βίντεο</string>
+            <string name="revanced_custom_filter_screen_title">Προσαρμοσμένο φίλτρο</string>
+            <string name="revanced_custom_filter_screen_summary">Απόκρυψη στοιχείων χρησιμοποιώντας προσαρμοσμένα φίλτρα</string>
+            <string name="revanced_custom_filter_title">Χρήση προσαρμοσμένου φίλτρου</string>
+            <string name="revanced_custom_filter_summary_on">Το προσαρμοσμένο φίλτρο είναι ενεργοποιημένο</string>
+            <string name="revanced_custom_filter_summary_off">Το προσαρμοσμένο φίλτρο είναι απενεργοποιημένο</string>
+            <string name="revanced_custom_filter_strings_title">Προσαρμοσμένο φίλτρο</string>
+            <string name="revanced_custom_filter_strings_summary">Λίστα από συμβολοσειρές διαδρομής στοιχείων για φιλτράρισμα, διαχωρισμένες με νέα γραμμή</string>
+            <string name="revanced_custom_filter_toast_invalid_syntax">Μη έγκυρο προσαρμοσμένο φίλτρο: %s</string>
+            <string name="revanced_hide_keyword_content_screen_title">Απόκρυψη περιεχομένου λέξεων-κλειδιών</string>
+            <string name="revanced_hide_keyword_content_screen_summary">Απόκρυψη βίντεο ροής και αναζήτησης χρησιμοποιώντας φίλτρα λέξεων-κλειδιών</string>
+            <string name="revanced_hide_keyword_content_home_title">Απόκρυψη στην καρτέλα \'Αρχική\'</string>
+            <string name="revanced_hide_keyword_content_home_summary_on">Τα βίντεο στην καρτέλα \'Αρχική\' φιλτραρίζονται από λέξεις-κλειδιά</string>
+            <string name="revanced_hide_keyword_content_home_summary_off">Τα βίντεο στην καρτέλα \'Αρχική\' δεν φιλτραρίζονται από λέξεις-κλειδιά</string>
+            <string name="revanced_hide_keyword_content_subscriptions_title">Απόκρυψη στην καρτέλα \'Εγγραφές\'</string>
+            <string name="revanced_hide_keyword_content_subscriptions_summary_on">Τα βίντεο στην καρτέλα \'Εγγραφές\' φιλτραρίζονται από λέξεις-κλειδιά</string>
+            <string name="revanced_hide_keyword_content_subscriptions_summary_off">Τα βίντεο στην καρτέλα \'Εγγραφές\' δεν φιλτραρίζονται από λέξεις-κλειδιά</string>
+            <string name="revanced_hide_keyword_content_search_title">Απόκρυψη στα αποτελέσματα αναζήτησης</string>
+            <string name="revanced_hide_keyword_content_search_summary_on">Τα αποτελέσματα αναζήτησης φιλτραρίζονται από λέξεις-κλειδιά</string>
+            <string name="revanced_hide_keyword_content_search_summary_off">Τα αποτελέσματα αναζήτησης δεν φιλτραρίζονται από λέξεις-κλειδιά</string>
+            <string name="revanced_hide_keyword_content_phrases_title">Λέξεις-κλειδιά για απόκρυψη</string>
+            <string name="revanced_hide_keyword_content_phrases_summary">Λέξεις-κλειδιά και φράσεις προς απόκρυψη, διαχωρισμένες με νέες γραμμές\n\nΟι λέξεις με κεφαλαία γράμματα στη μέση πρέπει να είναι ευαίσθητες στην πεζότητα (π.χ: iPhone, TikTok, LeBlanc)</string>
+            <string name="revanced_hide_keyword_content_about_title">Σχετικά με το φιλτράρισμα λέξεων</string>
+            <string name="revanced_hide_keyword_content_about_summary">Οι καρτέλες \'Αρχική\', \'Εγγραφές\' και τα αποτελέσματα αναζήτησης φιλτράρονται για απόκρυψη περιεχομένου που ταιριάζει με φράσεις λέξεων-κλειδιών\n\nΠεριορισμοί\n• Κάποια Shorts ενδέχεται να μην κρύβονται σωστά\n• Κάποια στοιχεία UI ενδέχεται να μην κρύβονται σωστά\n• Η αναζήτηση για μια λέξη-κλειδί ενδέχεται να μην εμφανίζει κανένα αποτέλεσμα</string>
+            <string name="revanced_hide_keyword_toast_invalid_common" formatted="false">Μη έγκυρη λέξη-κλειδί. Δεν είναι δυνατή η χρήση του: \'%s\' ως φίλτρο</string>
+            <string name="revanced_hide_keyword_toast_invalid_length" formatted="false">Μη έγκυρη λέξη-κλειδί. Το \'%s\' είναι λιγότερο από %s χαρακτήρες</string>
+        </patch>
+        <patch id="ad.general.HideAdsResourcePatch">
+            <string name="revanced_hide_general_ads_title">Γενικές διαφημίσεις</string>
+            <string name="revanced_hide_general_ads_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_general_ads_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_fullscreen_ads_title">Διαφημίσεις πλήρους οθόνης</string>
+            <string name="revanced_hide_fullscreen_ads_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_fullscreen_ads_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_buttoned_ads_title">Διαφημίσεις κουμπιών</string>
+            <string name="revanced_hide_buttoned_ads_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_buttoned_ads_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_paid_content_ads_title">Περιεχόμενο επί πληρωμή</string>
+            <string name="revanced_hide_paid_content_ads_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_paid_content_ads_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_self_sponsor_ads_title">Αυτοχορηγούμενες κάρτες</string>
+            <string name="revanced_hide_self_sponsor_ads_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_self_sponsor_ads_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_products_banner_title">Διαφημίσεις προβολής προϊόντων</string>
+            <string name="revanced_hide_products_banner_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_products_banner_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_shopping_links_title">Σύνδεσμοι αγορών στην περιγραφή βίντεο</string>
+            <string name="revanced_hide_shopping_links_summary_on">Κρυμμένοι</string>
+            <string name="revanced_hide_shopping_links_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_web_search_results_title">Αποτελέσματα αναζήτησης στο διαδίκτυο</string>
+            <string name="revanced_hide_web_search_results_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_web_search_results_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_merchandise_banners_title">Διαφημίσεις εμπορευμάτων</string>
+            <string name="revanced_hide_merchandise_banners_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_merchandise_banners_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_fullscreen_ads_feature_not_available_toast">Αποτυχία απόκρυψης διαφήμισης πλήρους οθόνης. Έγινε απενεργοποίηση για αποφυγή προβλημάτων</string>
+        </patch>
+        <patch id="ad.getpremium.HideGetPremiumPatch">
+            <string name="revanced_hide_get_premium_title">Διαφημίσεις YouTube Premium</string>
+            <string name="revanced_hide_get_premium_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_get_premium_summary_off">Εμφανίζονται</string>
+        </patch>
+        <patch id="ad.video.VideoAdsPatch">
+            <string name="revanced_hide_video_ads_title">Διαφημίσεις βίντεο</string>
+            <string name="revanced_hide_video_ads_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_video_ads_summary_off">Εμφανίζονται</string>
+        </patch>
+        <patch id="interaction.copyvideourl.CopyVideoUrlResourcePatch">
+            <string name="revanced_share_copy_url_success">Η διεύθυνση URL αντιγράφηκε στο πρόχειρο</string>
+            <string name="revanced_share_copy_url_timestamp_success">Η διεύθυνση URL αντιγράφηκε με χρονική σήμανση</string>
+            <string name="revanced_copy_video_url_title">Εμφάνιση κουμπιού αντιγραφής URL βίντεο</string>
+            <string name="revanced_copy_video_url_summary_on">Το κουμπί εμφανίζεται. Πατήστε για αντιγραφή συνδέσμου του βίντεο. Πατήστε παρατεταμένα για αντιγραφή με χρονική σήμανση</string>
+            <string name="revanced_copy_video_url_summary_off">Το κουμπί δεν εμφανίζεται</string>
+            <string name="revanced_copy_video_url_timestamp_title">Εμφάνιση κουμπιού αντιγραφής URL με χρονική σήμανση</string>
+            <string name="revanced_copy_video_url_timestamp_summary_on">Το κουμπί εμφανίζεται. Πατήστε για αντιγραφή συνδέσμου του βίντεο με χρονική σήμανση. Πατήστε παρατεταμένα για αντιγραφή χωρίς χρονική σήμανση</string>
+            <string name="revanced_copy_video_url_timestamp_summary_off">Το κουμπί δεν εμφανίζεται</string>
+        </patch>
+        <patch id="interaction.dialog.RemoveViewerDiscretionDialogPatch">
+            <string name="revanced_remove_viewer_discretion_dialog_title">Παράθυρο ηλικιακού περιορισμού</string>
+            <string name="revanced_remove_viewer_discretion_dialog_summary_on">Κρυμμένο</string>
+            <string name="revanced_remove_viewer_discretion_dialog_summary_off">Εμφανίζεται</string>
+            <string name="revanced_remove_viewer_discretion_dialog_user_dialog_message">Αυτό δεν παρακάμπτει τον ηλικιακό περιορισμό. Απλώς τον αποδέχεται αυτόματα.</string>
+        </patch>
+        <patch id="interaction.downloads.DownloadsResourcePatch">
+            <string name="revanced_external_downloader_screen_title">Εξωτερικές λήψεις</string>
+            <string name="revanced_external_downloader_screen_summary">Ρυθμίσεις για χρήση εξωτερικού προγράμματος λήψης</string>
+            <string name="revanced_external_downloader_title">Εμφάνιση κουμπιού εξωτερικής λήψης</string>
+            <string name="revanced_external_downloader_summary_on">Το κουμπί λήψης εμφανίζεται στον αναπαραγωγέα</string>
+            <string name="revanced_external_downloader_summary_off">Το κουμπί λήψης δεν εμφανίζεται στον αναπαραγωγέα</string>
+            <string name="revanced_external_downloader_action_button_title">Μετατροπή κουμπιού ενέργειας \'Λήψη\'</string>
+            <string name="revanced_external_downloader_action_button_summary_on">Το κουμπί ενέργειας \'Λήψη\' ανοίγει το εξωτερικό πρόγραμμα λήψης σας</string>
+            <string name="revanced_external_downloader_action_button_summary_off">Το κουμπί ενέργειας \'Λήψη\' ανοίγει το πρόγραμμα λήψης του YouTube</string>
+            <string name="revanced_external_downloader_name_title">Όνομα πακέτου του προγράμματος λήψης</string>
+            <string name="revanced_external_downloader_name_summary">Όνομα πακέτου της εγκατεστημένης σας εξωτερικής εφαρμογής λήψης (π.χ. NewPipe, Seal)</string>
+            <string name="revanced_external_downloader_not_installed_warning">Το %s δεν είναι εγκατεστημένο. Παρακαλούμε εγκαταστήστε το.</string>
+        </patch>
+        <patch id="interaction.seekbar.DisablePreciseSeekingGesturePatch">
+            <string name="revanced_disable_precise_seeking_gesture_title">Απενεργοποίηση ακριβής αναζήτησης</string>
+            <string name="revanced_disable_precise_seeking_gesture_summary_on">Η χειρονομία είναι απενεργοποιημένη</string>
+            <string name="revanced_disable_precise_seeking_gesture_summary_off">Η χειρονομία είναι ενεργοποιημένη</string>
+        </patch>
+        <patch id="interaction.seekbar.EnableSeekbarTappingPatch">
+            <string name="revanced_seekbar_tapping_title">Πάτημα γραμμής προόδου</string>
+            <string name="revanced_seekbar_tapping_summary_on">Το πάτημα γραμμής προόδου είναι ενεργοποιημένο</string>
+            <string name="revanced_seekbar_tapping_summary_off">Το πάτημα γραμμής προόδου είναι απενεργοποιημένο</string>
+        </patch>
+        <patch id="interaction.swipecontrols.SwipeControlsResourcePatch">
+            <string name="revanced_swipe_brightness_title">Έλεγχος σάρωσης για Φωτεινότητα</string>
+            <string name="revanced_swipe_brightness_summary_on">Η αλλαγή φωτεινότητας με χειρονομία σάρωσης είναι ενεργοποιημένη</string>
+            <string name="revanced_swipe_brightness_summary_off">Η αλλαγή φωτεινότητας με χειρονομία σάρωσης είναι απενεργοποιημένη</string>
+            <string name="revanced_swipe_volume_title">Έλεγχος σάρωσης για Ένταση Ήχου</string>
+            <string name="revanced_swipe_volume_summary_on">Η αλλαγή έντασης ήχου με χειρονομία σάρωσης είναι ενεργοποιημένη</string>
+            <string name="revanced_swipe_volume_summary_off">Η αλλαγή έντασης ήχου με χειρονομία σάρωσης είναι απενεργοποιημένη</string>
+            <string name="revanced_swipe_press_to_engage_title">Παρατεταμένο πάτημα για σάρωση</string>
+            <string name="revanced_swipe_press_to_engage_summary_on">Η λειτουργία πάτημα-για-σάρωση είναι ενεργοποιημένη</string>
+            <string name="revanced_swipe_press_to_engage_summary_off">Η λειτουργία πάτημα-για-σάρωση είναι απενεργοποιημένη</string>
+            <string name="revanced_swipe_haptic_feedback_title">Απόκριση δόνησης</string>
+            <string name="revanced_swipe_haptic_feedback_summary_on">Η απόκριση δόνησης είναι ενεργοποιημένη</string>
+            <string name="revanced_swipe_haptic_feedback_summary_off">Η απόκριση δόνησης είναι απενεργοποιημένη</string>
+            <string name="revanced_swipe_save_and_restore_brightness_title">Αποθήκευση και επαναφορά φωτεινότητας</string>
+            <string name="revanced_swipe_save_and_restore_brightness_summary_on">Αποθήκευση και επαναφορά φωτεινότητας κατά την έξοδο ή την είσοδο σε πλήρη οθόνη</string>
+            <string name="revanced_swipe_save_and_restore_brightness_summary_off">Να μην αποθηκεύεται και να επαναφέρεται η φωτεινότητα κατά την έξοδο ή την είσοδο σε πλήρη οθόνη</string>
+            <string name="revanced_swipe_overlay_timeout_title">Χρονικό όριο φόντου σάρωσης</string>
+            <string name="revanced_swipe_overlay_timeout_summary">Το χρονικό διάστημα χιλιοστών του δευτερολέπτου που είναι ορατό το φόντο σάρωσης</string>
+            <string name="revanced_swipe_text_overlay_size_title">Μέγεθος κειμένου φόντου σάρωσης</string>
+            <string name="revanced_swipe_text_overlay_size_summary">Το μέγεθος κειμένου του φόντου σάρωσης</string>
+            <string name="revanced_swipe_overlay_background_alpha_title">Ορατότητα φόντου σάρωσης</string>
+            <string name="revanced_swipe_overlay_background_alpha_summary">Η ορατότητα του φόντου σάρωσης</string>
+            <string name="revanced_swipe_threshold_title">Κατώτατο όριο μεγέθους σάρωσης</string>
+            <string name="revanced_swipe_threshold_summary">Το ελάχιστο πλάτος κίνησης αναγνωρίσιμο ως χειρονομία σάρωσης</string>
+        </patch>
+        <patch id="layout.autocaptions.AutoCaptionsPatch">
+            <string name="revanced_auto_captions_title">Απενεργοποίηση αυτόματων υπότιτλων</string>
+            <string name="revanced_auto_captions_summary_on">Οι αυτόματοι υπότιτλοι απενεργοποιήθηκαν</string>
+            <string name="revanced_auto_captions_summary_off">Οι αυτόματοι υπότιτλοι είναι ενεργοποιημένοι</string>
+        </patch>
+        <patch id="layout.buttons.action.HideButtonsPatch">
+            <string name="revanced_hide_buttons_screen_title">Κουμπιά ενεργειών</string>
+            <string name="revanced_hide_buttons_screen_summary">Απόκρυψη η εμφάνιση κουμπιών κάτω από τα βίντεο</string>
+            <string name="revanced_hide_like_dislike_button_title">Κουμπιά \'Μου αρέσει\' &amp; \'Δεν μου αρέσει\'</string>
+            <string name="revanced_hide_like_dislike_button_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_like_dislike_button_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_share_button_title">Κουμπί \'Κοινοποίηση\'</string>
+            <string name="revanced_hide_share_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_share_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_report_button_title">Κουμπί \'Αναφορά\'</string>
+            <string name="revanced_hide_report_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_report_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_remix_button_title">Κουμπί \'Remix\'</string>
+            <string name="revanced_hide_remix_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_remix_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_download_button_title">Κουμπί \'Λήψη\'</string>
+            <string name="revanced_hide_download_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_download_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_thanks_button_title">Κουμπί \'Σας ευχαριστούμε\'</string>
+            <string name="revanced_hide_thanks_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_thanks_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_clip_button_title">Κουμπί \'Κλιπ\'</string>
+            <string name="revanced_hide_clip_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_clip_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_playlist_button_title">Κουμπί \'Αποθήκευση\'</string>
+            <string name="revanced_hide_playlist_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_playlist_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shop_button_title">Κουμπί \'Κατάστημα\'</string>
+            <string name="revanced_hide_shop_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shop_button_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.buttons.autoplay.HideAutoplayButtonPatch">
+            <string name="revanced_hide_autoplay_button_title">Κουμπί αυτόματης αναπαραγωγής</string>
+            <string name="revanced_hide_autoplay_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_autoplay_button_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.buttons.captions.HideCaptionsButtonPatch">
+            <string name="revanced_hide_captions_button_title">Κουμπί υπότιτλων</string>
+            <string name="revanced_hide_captions_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_captions_button_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.buttons.cast.HideCastButtonPatch">
+            <string name="revanced_hide_cast_button_title">Κουμπί μετάδοσης</string>
+            <string name="revanced_hide_cast_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_cast_button_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.buttons.navigation.NavigationButtonsPatch">
+            <string name="revanced_navigation_buttons_screen_title">Κουμπιά γραμμής πλοήγησης</string>
+            <string name="revanced_navigation_buttons_screen_summary">Απόκρυψη ή αλλαγή κουμπιών στη γραμμή πλοήγησης</string>
+            <string name="revanced_hide_home_button_title">Κουμπί \'Αρχική\'</string>
+            <string name="revanced_hide_home_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_home_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_button_title">Κουμπί \'Shorts\'</string>
+            <string name="revanced_hide_shorts_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_create_button_title">Κουμπί \'Δημιουργία\'</string>
+            <string name="revanced_hide_create_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_create_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_subscriptions_button_title">Κουμπί \'Εγγραφές\'</string>
+            <string name="revanced_hide_subscriptions_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_subscriptions_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_switch_create_with_notifications_button_title">Εναλλαγή \'Δημιουργία\' με \'Ειδοποιήσεις\'</string>
+            <string name="revanced_switch_create_with_notifications_button_summary_on">Γίνεται εναλλαγή θέσεων του κουμπιού δημιουργίας με του κουμπιού ειδοποιήσεων</string>
+            <string name="revanced_switch_create_with_notifications_button_summary_off">Δεν γίνεται εναλλαγή του κουμπιού δημιουργίας και του κουμπιού ειδοποιήσεων</string>
+        </patch>
+        <patch id="layout.hide.player.flyoutmenupanel.HidePlayerFlyoutMenuPatch">
+            <string name="revanced_hide_player_flyout_title">Αναδυόμενο μενού ρυθμίσεων</string>
+            <string name="revanced_hide_player_flyout_summary">Απόκρυψη η εμφάνιση στοιχείων του αναδυόμενου μενού</string>
+            <string name="revanced_hide_player_flyout_captions_title">Μενού \'Υπότιτλοι\'</string>
+            <string name="revanced_hide_player_flyout_captions_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_captions_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_player_flyout_additional_settings_title">Μενού \'Πρόσθετες ρυθμίσεις\'</string>
+            <string name="revanced_hide_player_flyout_additional_settings_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_additional_settings_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_player_flyout_loop_video_title">Μενού \'Επανάληψη βίντεο\'</string>
+            <string name="revanced_hide_player_flyout_loop_video_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_loop_video_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_player_flyout_ambient_mode_title">Μενού \'Λειτουργία περιβάλλοντος\'</string>
+            <string name="revanced_hide_player_flyout_ambient_mode_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_ambient_mode_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_player_flyout_report_title">Μενού \'Αναφορά\'</string>
+            <string name="revanced_hide_player_flyout_report_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_report_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_player_flyout_help_title">Μενού \'Βοήθεια &amp; σχόλια\'</string>
+            <string name="revanced_hide_player_flyout_help_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_help_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_player_flyout_speed_title">Μενού \'Ταχύτητα αναπαραγωγής\'</string>
+            <string name="revanced_hide_player_flyout_speed_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_speed_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_player_flyout_more_info_title">Μενού \'Περισσότερα\'</string>
+            <string name="revanced_hide_player_flyout_more_info_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_more_info_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_player_flyout_audio_track_title">Μενού \'Κομμάτι ήχου\'</string>
+            <string name="revanced_hide_player_flyout_audio_track_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_audio_track_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_player_flyout_watch_in_vr_title">Μενού \'Προβολή σε VR\'</string>
+            <string name="revanced_hide_player_flyout_watch_in_vr_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_player_flyout_watch_in_vr_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.buttons.player.hide.HidePlayerButtonsPatch">
+            <string name="revanced_hide_player_buttons_title">Κουμπιά προηγούμενου &amp; επόμενου βίντεο</string>
+            <string name="revanced_hide_player_buttons_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_player_buttons_summary_off">Εμφανίζονται</string>
+        </patch>
+        <patch id="layout.hide.albumcards.AlbumCardsResourcePatch">
+            <string name="revanced_hide_album_cards_title">Κάρτες άλμπουμ</string>
+            <string name="revanced_hide_album_cards_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_album_cards_summary_off">Εμφανίζονται</string>
+        </patch>
+        <patch id="layout.hide.breakingnews.BreakingNewsResourcePatch">
+            <string name="revanced_hide_breaking_news_title">Έκτακτες ειδήσεις</string>
+            <string name="revanced_hide_breaking_news_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_breaking_news_summary_off">Εμφανίζονται</string>
+        </patch>
+        <patch id="layout.hide.comments.CommentsPatch">
+            <string name="revanced_comments_screen_title">Σχόλια</string>
+            <string name="revanced_comments_screen_summary">Απόκρυψη η εμφάνιση στοιχείων στα σχόλια</string>
+            <string name="revanced_hide_comments_section_title">Περιοχή σχολίων</string>
+            <string name="revanced_hide_comments_section_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_comments_section_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_preview_comment_title">Προεπισκόπηση σχολίου</string>
+            <string name="revanced_hide_preview_comment_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_preview_comment_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.hide.crowdfundingbox.CrowdfundingBoxResourcePatch">
+            <string name="revanced_hide_crowdfunding_box_title">Κουτί δωρεάς</string>
+            <string name="revanced_hide_crowdfunding_box_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_crowdfunding_box_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.hide.endscreencards.HideEndscreenCardsResourcePatch">
+            <string name="revanced_hide_endscreen_cards_title">Κάρτες τελικής οθόνης</string>
+            <string name="revanced_hide_endscreen_cards_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_endscreen_cards_summary_off">Εμφανίζονται</string>
+        </patch>
+        <patch id="layout.hide.filterbar.HideFilterBarResourcePatch">
+            <string name="revanced_hide_filter_bar_screen_title">Γραμμή φίλτρων</string>
+            <string name="revanced_hide_filter_bar_screen_summary">Απόκρυψη η εμφάνιση της γραμμής φίλτρων στη ροή, αναζήτηση και τα σχετικά βίντεο</string>
+            <string name="revanced_hide_filter_bar_feed_in_feed_title">Απόκρυψη στη ροή</string>
+            <string name="revanced_hide_filter_bar_feed_in_feed_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_filter_bar_feed_in_feed_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_filter_bar_feed_in_search_title">Απόκρυψη στα αποτελέσματα αναζήτησης</string>
+            <string name="revanced_hide_filter_bar_feed_in_search_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_filter_bar_feed_in_search_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_filter_bar_feed_in_related_videos_title">Απόκρυψη στα σχετικά βίντεο</string>
+            <string name="revanced_hide_filter_bar_feed_in_related_videos_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_filter_bar_feed_in_related_videos_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.hide.floatingmicrophone.HideFloatingMicrophoneButtonResourcePatch">
+            <string name="revanced_hide_floating_microphone_button_title">Αιωρούμενο κουμπί μικροφώνου</string>
+            <string name="revanced_hide_floating_microphone_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_floating_microphone_button_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.hide.fullscreenambientmode.DisableFullscreenAmbientModePatch">
+            <string name="revanced_disable_fullscreen_ambient_mode_title">Απενεργοποίηση λειτουργίας περιβάλλοντος σε πλήρη οθόνη</string>
+            <string name="revanced_disable_fullscreen_ambient_mode_summary_on">Η λειτουργία περιβάλλοντος σε πλήρη οθόνη είναι απενεργοποιημένη</string>
+            <string name="revanced_disable_fullscreen_ambient_mode_summary_off">Η λειτουργία περιβάλλοντος σε πλήρη οθόνη είναι ενεργοποιημένη</string>
+        </patch>
+        <patch id="layout.hide.infocards.HideInfocardsResourcePatch">
+            <string name="revanced_hide_info_cards_title">Κάρτες πληροφοριών</string>
+            <string name="revanced_hide_info_cards_summary_on">Κρυμμένες</string>
+            <string name="revanced_hide_info_cards_summary_off">Εμφανίζονται</string>
+        </patch>
+        <patch id="layout.hide.loadmorebutton.HideLoadMoreButtonResourcePatch">
+            <string name="revanced_hide_load_more_button_title">Κουμπί \'Φόρτωση περισσότερων\'</string>
+            <string name="revanced_hide_load_more_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_load_more_button_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.hide.player.flyoutmenupanel.HidePlayerFlyoutMenuPatch">
+            <string name="video_title">Βίντεο</string>
+        </patch>
+        <patch id="layout.hide.rollingnumber.DisableRollingNumberAnimationPatch">
+            <string name="revanced_disable_rolling_number_animations_title">Απενεργοποίηση κίνησης κυλιόμενων αριθμών</string>
+            <string name="revanced_disable_rolling_number_animations_summary_on">Οι κυλιόμενοι αριθμοί δεν είναι κινούμενοι</string>
+            <string name="revanced_disable_rolling_number_animations_summary_off">Οι κυλιόμενοι αριθμοί είναι κινούμενοι</string>
+        </patch>
+        <patch id="layout.hide.seekbar.HideSeekbarPatch">
+            <string name="revanced_hide_seekbar_title">Γραμμή προόδου στον αναπαραγωγέα</string>
+            <string name="revanced_hide_seekbar_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_seekbar_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_seekbar_thumbnail_title">Γραμμή προόδου σε μικρογραφίες βίντεο</string>
+            <string name="revanced_hide_seekbar_thumbnail_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_seekbar_thumbnail_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.hide.shorts.HideShortsComponentsResourcePatch">
+            <string name="revanced_hide_shorts_home_title">Shorts στην καρτέλα \'Αρχική\'</string>
+            <string name="revanced_hide_shorts_home_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_shorts_home_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_shorts_subscriptions_title">Shorts στην καρτέλα \'Εγγραφές\'</string>
+            <string name="revanced_hide_shorts_subscriptions_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_shorts_subscriptions_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_shorts_search_title">Shorts στα αποτελέσματα αναζήτησης</string>
+            <string name="revanced_hide_shorts_search_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_shorts_search_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_shorts_join_button_title">Κουμπί \'Συμμετοχή\'</string>
+            <string name="revanced_hide_shorts_join_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_join_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_subscribe_button_title">Κουμπί \'Εγγραφή\'</string>
+            <string name="revanced_hide_shorts_subscribe_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_subscribe_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_subscribe_button_paused_title">Κουμπί \'Εγγραφές\' κατά την παύση</string>
+            <string name="revanced_hide_shorts_subscribe_button_paused_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_subscribe_button_paused_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_thanks_button_title">Κουμπί \'Σας ευχαριστούμε\'</string>
+            <string name="revanced_hide_shorts_thanks_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_thanks_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_like_button_title">Κουμπί \'Μου αρέσει\'</string>
+            <string name="revanced_hide_shorts_like_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_like_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_dislike_button_title">Κουμπί \'Δεν μου αρέσει\'</string>
+            <string name="revanced_hide_shorts_dislike_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_dislike_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_comments_button_title">Κουμπί \'Σχόλια\'</string>
+            <string name="revanced_hide_shorts_comments_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_comments_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_remix_button_title">Κουμπί \'Remix\'</string>
+            <string name="revanced_hide_shorts_remix_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_remix_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_share_button_title">Κουμπί \'Κοινοποίηση\'</string>
+            <string name="revanced_hide_shorts_share_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_share_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_info_panel_title">Πάνελ πληροφοριών</string>
+            <string name="revanced_hide_shorts_info_panel_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_shorts_info_panel_summary_off">Εμφανίζονται</string>
+            <string name="revanced_hide_shorts_channel_bar_title">Γραμμή καναλιού</string>
+            <string name="revanced_hide_shorts_channel_bar_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_shorts_channel_bar_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_video_title_title">Τίτλος βίντεο Shorts</string>
+            <string name="revanced_hide_shorts_video_title_summary_on">Κρυμμένος</string>
+            <string name="revanced_hide_shorts_video_title_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_sound_metadata_label_title">Ετικέτα μεταδεδομένων ήχου</string>
+            <string name="revanced_hide_shorts_sound_metadata_label_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_shorts_sound_metadata_label_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_full_video_link_label_title">Ετικέτα πλήρους συνδέσμου βίντεο</string>
+            <string name="revanced_hide_shorts_full_video_link_label_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_shorts_full_video_link_label_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_sound_button_title">Κουμπί ήχου</string>
+            <string name="revanced_hide_shorts_sound_button_summary_on">Κρυμμένο</string>
+            <string name="revanced_hide_shorts_sound_button_summary_off">Εμφανίζεται</string>
+            <string name="revanced_hide_shorts_navigation_bar_title">Γραμμή πλοήγησης</string>
+            <string name="revanced_hide_shorts_navigation_bar_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_shorts_navigation_bar_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.hide.suggestedvideoendscreen.DisableSuggestedVideoEndScreenResourcePatch">
+            <string name="revanced_disable_suggested_video_end_screen_title">Τελική οθόνη προτεινόμενου βίντεο</string>
+            <string name="revanced_disable_suggested_video_end_screen_summary_on">Κρυμμένη</string>
+            <string name="revanced_disable_suggested_video_end_screen_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.hide.time.HideTimestampPatch">
+            <string name="revanced_hide_timestamp_title">Χρονοσφραγίδα βίντεο</string>
+            <string name="revanced_hide_timestamp_summary_on">Κρυμμένη</string>
+            <string name="revanced_hide_timestamp_summary_off">Εμφανίζεται</string>
+        </patch>
+        <patch id="layout.panels.popup.PlayerPopupPanelsPatch">
+            <string name="revanced_hide_player_popup_panels_title">Αναδυόμενα παράθυρα του αναπαραγωγέα</string>
+            <string name="revanced_hide_player_popup_panels_summary_on">Κρυμμένα</string>
+            <string name="revanced_hide_player_popup_panels_summary_off">Εμφανίζονται</string>
+        </patch>
+        <patch id="layout.player.overlay.CustomPlayerOverlayOpacityResourcePatch">
+            <string name="revanced_player_overlay_opacity_title">Αδιαφάνεια φόντου αναπαραγωγέα</string>
+            <string name="revanced_player_overlay_opacity_summary">Τιμή αδιαφάνειας μεταξύ 0-100, όπου το 0 είναι διαφανές</string>
+        </patch>
+        <patch id="layout.returnyoutubedislike.ReturnYouTubeDislikeResourcePatch">
+            <string name="revanced_ryd_settings_title">Return YouTube Dislike</string>
+            <string name="revanced_ryd_video_likes_hidden_by_video_owner">Κρυμμένα</string>
+            <string name="revanced_ryd_failure_connection_timeout">Δεδομένα dislike προσωρινά μή διαθέσιμα (χρονοκαθυστέρηση API)</string>
+            <string name="revanced_ryd_failure_connection_status_code" formatted="false">Δεδομένα dislike μή διαθέσιμα (κατάσταση %d)</string>
+            <string name="revanced_ryd_failure_client_rate_limit_requested">Δεδομένα dislike μή διαθέσιμα (το όριο API του πελάτη έχει επιτευχθεί)</string>
+            <string name="revanced_ryd_failure_generic">Δεδομένα dislike μή διαθέσιμα (%s)</string>
+            <!-- corner case situation, where user enables RYD while video is playing and then tries
+            to vote for the video -->
+            <string name="revanced_ryd_failure_ryd_enabled_while_playing_video_then_user_voted">Επαναφορτώστε το βίντεο για να ψηφίσετε χρησιμοποιώντας το ReturnYouTubeDislike</string>
+            <string name="revanced_ryd_enable_title">Return YouTube Dislike</string>
+            <string name="revanced_ryd_enable_summary_on">Τα \'Δεν μου αρέσει\' εμφανίζονται</string>
+            <string name="revanced_ryd_enable_summary_off">Τα \'Δεν μου αρέσει\' δεν εμφανίζονται</string>
+            <string name="revanced_ryd_shorts_title">Εμφάνιση στα Shorts</string>
+            <string name="revanced_ryd_shorts_summary_on">Τα \'Δεν μου αρέσει\' εμφανίζονται στα Shorts %s</string>
+            <string name="revanced_ryd_shorts_summary_off">Τα \'Δεν μου αρέσει\' δεν εμφανίζονται στα Shorts</string>
+            <string name="revanced_ryd_shorts_summary_disclaimer">Περιορισμός: Τα \'Δεν μου αρέσει\' ενδέχεται να μην εμφανίζονται στη λειτουργία ανώνυμης περιήγησης</string>
+            <string name="revanced_ryd_dislike_percentage_title">Εμφάνιση ως ποσοστό</string>
+            <string name="revanced_ryd_dislike_percentage_summary_on">Τα \'Δεν μου αρέσει\' εμφανίζονται ως ποσοστό</string>
+            <string name="revanced_ryd_dislike_percentage_summary_off">Τα \'Δεν μου αρέσει\' εμφανίζονται ως αριθμός</string>
+            <string name="revanced_ryd_compact_layout_title">Κουμπί \'Μου αρέσει\' μικρότερου στυλ</string>
+            <string name="revanced_ryd_compact_layout_summary_on">Το κουμπί \'Μου αρέσει\' είναι διαμορφωμένο για ελάχιστο μέγεθος</string>
+            <string name="revanced_ryd_compact_layout_summary_off">Το κουμπί \'Μου αρέσει\' είναι διαμορφωμένο για καλύτερη εμφάνιση</string>
+            <string name="revanced_ryd_toast_on_connection_error_title">Εμφάνιση μηνύματος αν το API δεν είναι διαθέσιμο</string>
+            <string name="revanced_ryd_toast_on_connection_error_summary_on">Να εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης αν το Return YouTube Dislike δεν είναι διαθέσιμο</string>
+            <string name="revanced_ryd_toast_on_connection_error_summary_off">Να μην εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης αν το Return YouTube Dislike δεν είναι διαθέσιμο</string>
+            <string name="revanced_ryd_about">Σχετικά με</string>
+            <string name="revanced_ryd_attribution_title">ReturnYouTubeDislike.com</string>
+            <string name="revanced_ryd_attribution_summary">Τα δεδομένα παρέχονται από το Return YouTube Dislike API. Πατήστε εδώ για να μάθετε περισσότερα</string>
+            <string name="revanced_ryd_statistics_category_title">Στατιστικά ReturnYouTubeDislike API αυτής της συσκευής</string>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeAverage_title">Χρόνος απόκρισης API, μέσος όρος</string>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeMin_title">Χρόνος απόκρισης API, ελάχιστος</string>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeMax_title">Χρόνος απόκρισης API, μέγιστος</string>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeLast_title">Χρόνος απόκρισης API, τελευταίο βίντεο</string>
+            <string name="revanced_ryd_statistics_getFetchCallResponseTimeLast_rate_limit_summary">Δεδομένα dislike προσωρινά μή διαθέσιμα - Όριο ρυθμού πελάτη API σε ισχύ</string>
+            <string name="revanced_ryd_statistics_getFetchCallCount_title">API ανάκτηση ψήφων, αριθμός κλήσεων</string>
+            <string name="revanced_ryd_statistics_getFetchCallCount_zero_summary">Δεν πραγματοποιήθηκαν κλήσεις δικτύου</string>
+            <string name="revanced_ryd_statistics_getFetchCallCount_non_zero_summary">Πραγματοποιήθηκαν %d κλήσεις δικτύου</string>
+            <string name="revanced_ryd_statistics_getFetchCallNumberOfFailures_title">API ανάκτηση ψήφων, αριθμός αποτυχιών</string>
+            <string name="revanced_ryd_statistics_getFetchCallNumberOfFailures_zero_summary">Δεν υπήρξαν αποτυχίες κλήσης δικτύου</string>
+            <string name="revanced_ryd_statistics_getFetchCallNumberOfFailures_non_zero_summary">%d κλήσεις δικτύου απέτυχαν</string>
+            <string name="revanced_ryd_statistics_getNumberOfRateLimitRequestsEncountered_title">Όρια πελατών API</string>
+            <string name="revanced_ryd_statistics_getNumberOfRateLimitRequestsEncountered_zero_summary">Δεν αντιμετωπίστηκαν περιορισμοί ορίου πελάτη</string>
+            <string name="revanced_ryd_statistics_getNumberOfRateLimitRequestsEncountered_non_zero_summary">Αντιμετωπίστηκαν %d περιορισμοί ορίου πελάτη</string>
+            <string name="revanced_ryd_statistics_millisecond_text">%d χιλιοστά δευτερολέπτου</string>
+        </patch>
+        <patch id="layout.searchbar.WideSearchbarPatch">
+            <string name="revanced_wide_searchbar_title">Ευρεία γραμμή αναζήτησης</string>
+            <string name="revanced_wide_searchbar_summary_on">Η ευρεία γραμμή αναζήτησης είναι ενεργοποιημένη</string>
+            <string name="revanced_wide_searchbar_summary_off">Η ευρεία γραμμή αναζήτησης είναι απενεργοποιημένη</string>
+        </patch>
+        <patch id="layout.seekbar.RestoreOldSeekbarThumbnailsPatch">
+            <string name="revanced_restore_old_seekbar_thumbnails_title">Παλιές μικρογραφίες γραμμής προόδου</string>
+            <string name="revanced_restore_old_seekbar_thumbnails_summary_on">Οι μικρογραφίες προεπισκόπησης θα εμφανίζονται πάνω από τη γραμμή προόδου</string>
+            <string name="revanced_restore_old_seekbar_thumbnails_summary_off">Οι μικρογραφίες προεπισκόπησης θα εμφανίζονται σε πλήρη οθόνη</string>
+        </patch>
+        <patch id="layout.sponsorblock.SponsorBlockResourcePatch">
+            <string name="revanced_sb_settings_title">SponsorBlock</string>
+            <string name="revanced_sb_enable_sb">Ενεργοποίηση του SponsorBlock</string>
+            <string name="revanced_sb_enable_sb_sum">Το SponsorBlock είναι ένα σύστημα που προέρχεται από το κοινό για παράβλεψη ενοχλητικών τμημάτων σε βίντεο YouTube</string>
+            <string name="revanced_sb_appearance_category">Εμφάνιση</string>
+            <string name="revanced_sb_enable_voting">Κουμπί ψηφοφορίας τμήματος</string>
+            <string name="revanced_sb_enable_voting_sum_on">Το κουμπί ψηφοφορίας τμήματος εμφανίζεται</string>
+            <string name="revanced_sb_enable_voting_sum_off">Το κουμπί ψηφοφορίας τμήματος δεν εμφανίζεται</string>
+            <string name="revanced_sb_enable_compact_skip_button">Κουμπί παράλειψης μικρότερου στυλ</string>
+            <string name="revanced_sb_enable_compact_skip_button_sum_on">Το κουμπί παράλειψης είναι διαμορφωμένο για ελάχιστο μέγεθος</string>
+            <string name="revanced_sb_enable_compact_skip_button_sum_off">Το κουμπί παράλειψης είναι διαμορφωμένο για καλύτερη εμφάνιση</string>
+            <string name="revanced_sb_enable_auto_hide_skip_segment_button">Αυτόματη απόκρυψη κουμπιού παράλειψης</string>
+            <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Το κουμπί παράλειψης κρύβεται μετά από μερικά δευτερόλεπτα</string>
+            <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Το κουμπί παράλειψης εμφανίζεται καθ' όλη τη διάρκεια του τμήματος</string>
+            <string name="revanced_sb_general_skiptoast">Εμφάνιση μηνύματος κατά την αυτόματη παράλειψη</string>
+            <string name="revanced_sb_general_skiptoast_sum_on">Να εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης όταν ένα τμήμα παραλείπεται αυτόματα. Πατήστε εδώ για να δείτε ένα παράδειγμα</string>
+            <string name="revanced_sb_general_skiptoast_sum_off">Να μην εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης. Πατήστε εδώ για να δείτε ένα παράδειγμα</string>
+            <string name="revanced_sb_general_time_without">Εμφάνιση μήκους βίντεο χωρίς τα τμήματα</string>
+            <string name="revanced_sb_general_time_without_sum_on">Εμφανίζεται το μήκος βίντεο μείον όλα τα τμήματα, σε παρένθεση δίπλα στο πλήρες μήκος βίντεο</string>
+            <string name="revanced_sb_general_time_without_sum_off">Εμφανίζεται το πλήρες μήκος του βίντεο</string>
+            <string name="revanced_sb_create_segment_category">Δημιουργία νέων τμημάτων</string>
+            <string name="revanced_sb_enable_create_segment">Κουμπί δημιουργίας νέου τμήματος</string>
+            <string name="revanced_sb_enable_create_segment_sum_on">Το κουμπί δημιουργίας νέου τμήματος εμφανίζεται</string>
+            <string name="revanced_sb_enable_create_segment_sum_off">Το κουμπί δημιουργίας νέου τμήματος δεν εμφανίζεται</string>
+            <string name="revanced_sb_general_adjusting">Ρύθμιση βήματος νέου τμήματος</string>
+            <string name="revanced_sb_general_adjusting_sum">Αριθμός των χιλιοστών του δευτερολέπτου που μετακινούνται τα κουμπιά ρύθμισης χρόνου κατά τη δημιουργία νέων τμημάτων</string>
+            <string name="revanced_sb_general_adjusting_invalid">Η τιμή πρέπει να είναι θετικός αριθμός</string>
+            <string name="revanced_sb_guidelines_preference_title">Προβολή οδηγιών</string>
+            <string name="revanced_sb_guidelines_preference_sum">Οι οδηγίες περιέχουν κανόνες και συμβουλές σχετικά με την υποβολή τμημάτων</string>
+            <string name="revanced_sb_guidelines_popup_title">Ακολουθήστε τις οδηγίες</string>
+            <string name="revanced_sb_guidelines_popup_content">Διαβάστε τις οδηγίες του SponsorBlock πριν δημιουργήσετε νέα τμήματα</string>
+            <string name="revanced_sb_guidelines_popup_already_read">Τις έχω διαβάσει</string>
+            <string name="revanced_sb_guidelines_popup_open">Δείξτε μου</string>
+            <string name="revanced_sb_general">Γενικά</string>
+            <string name="revanced_sb_toast_on_connection_error_title">Εμφάνιση μηνύματος αν το API δεν είναι διαθέσιμο</string>
+            <string name="revanced_sb_toast_on_connection_error_summary_on">Να εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης αν το SponsorBlock δεν είναι διαθέσιμο</string>
+            <string name="revanced_sb_toast_on_connection_error_summary_off">Να μην εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης αν το SponsorBlock δεν είναι διαθέσιμο</string>
+            <string name="revanced_sb_general_skipcount">Mετρητής παραλείψεων τμημάτων</string>
+            <string name="revanced_sb_general_skipcount_sum_on">Αφήνει τον πίνακα κατάταξης του SponsorBlock να γνωρίζει πόσος χρόνος σώζεται. Ένα μήνυμα αποστέλλεται στον πίνακα κατάταξης κάθε φορά που παραλείπεται ένα τμήμα</string>
+            <string name="revanced_sb_general_skipcount_sum_off">Ο μετρητής παραλείψεων δεν είναι ενεργός</string>
+            <string name="revanced_sb_general_min_duration">Ελάχιστη διάρκεια τμήματος</string>
+            <string name="revanced_sb_general_min_duration_sum">Τμήματα μικρότερα από την καθορισμένη τιμή (σε δευτερόλεπτα) δεν θα εμφανίζονται ούτε θα παραβλεφθούν </string>
+            <string name="revanced_sb_general_uuid">Το ιδιωτικό σας αναγνωριστικό χρήστη</string>
+            <string name="revanced_sb_general_uuid_sum">Αυτό θα πρέπει να παραμείνει ιδιωτικό. Αυτό είναι σαν έναν κωδικό πρόσβασης και δεν πρέπει να κοινοποιείται σε κανέναν. Αν κάποιος το έχει αυτό, μπορεί να σας μιμηθεί</string>
+            <string name="revanced_sb_general_uuid_invalid">Το ιδιωτικό αναγνωριστικό χρήστη πρέπει να είναι τουλάχιστον 30 χαρακτήρες</string>
+            <string name="revanced_sb_general_api_url">Αλλαγή διεύθυνσης API</string>
+            <string name="revanced_sb_general_api_url_sum">Η διεύθυνση που χρησιμοποιεί το SponsorBlock για να κάνει κλήσεις στο διακομιστή. Μην το αλλάξετε αυτό εκτός αν ξέρετε τι κάνετε</string>
+            <string name="revanced_sb_api_url_reset">Η διεύθυνση URL του API επαναφέρθηκε</string>
+            <string name="revanced_sb_api_url_invalid">Η διεύθυνση URL του API δεν είναι έγκυρη</string>
+            <string name="revanced_sb_api_url_changed">Η διεύθυνση URL του API άλλαξε</string>
+            <string name="revanced_sb_settings_ie">Εισαγωγή/Εξαγωγή ρυθμίσεων</string>
+            <string name="revanced_sb_settings_copy">Αντιγραφή</string>
+            <string name="revanced_sb_settings_ie_sum">Οι ρυθμίσεις SponsorBlock σας σε μορφή JSON που μπορούν να εισαχθούν/εξαχθούν στο ReVanced και σε άλλες πλατφόρμες SponsorBlock %s</string>
+            <string name="revanced_sb_settings_ie_sum_warning">Αυτό περιλαμβάνει το ιδιωτικό σας αναγνωριστικό χρήστη. Φροντίστε να το μοιράζεστε με σύνεση</string>
+            <string name="revanced_sb_settings_import_successful">Οι ρυθμίσεις εισήχθησαν επιτυχώς</string>
+            <string name="revanced_sb_settings_import_failed">Η εισαγωγή απέτυχε: %s</string>
+            <string name="revanced_sb_settings_export_failed">Η εξαγωγή απέτυχε: %s</string>
+            <string name="revanced_sb_settings_revanced_export_user_id_warning">Οι ρυθμίσεις σας περιέχουν ένα ιδιωτικό αναγνωριστικό χρήστη SponsorBlock.\n\nΑυτό είναι σαν έναν κωδικό πρόσβασης και δεν πρέπει ποτέ να το μοιραστείτε.\n</string>
+            <string name="revanced_sb_settings_revanced_export_user_id_warning_dismiss">Να μην εμφανιστεί ξανά</string>
+            <string name="revanced_sb_diff_segments">Αλλαγή συμπεριφοράς τμημάτων</string>
+            <string name="revanced_sb_segments_sponsor">Χορηγός</string>
+            <string name="revanced_sb_segments_sponsor_sum">Προσφορές πληρωμών, παραπομπές πληρωμών, και άμεσες διαφημίσεις. Όχι για αυτοπροώθηση ή δωρεάν αναφορές σε αιτίες/δημιουργούς/ιστοσελίδες/προϊόντα που τους αρέσουν</string>
+            <string name="revanced_sb_segments_selfpromo">Αφιλοκέρδεια/Αυτοπροώθηση</string>
+            <string name="revanced_sb_segments_selfpromo_sum">Παρόμοια με το \'Χορηγός\' αλλά για μη κερδοσκοπικό σκοπό ή για προσωπική προώθηση. Περιλαμβάνει τμήματα σχετικά με εμπορεύματα, δωρεές ή πληροφορίες για το με ποιους συνεργάστηκαν</string>
+            <string name="revanced_sb_segments_interaction">Υπενθύμιση Αλληλεπίδρασης (Εγγραφή)</string>
+            <string name="revanced_sb_segments_interaction_sum">Όταν υπάρχει μια σύντομη υπενθύμιση για να προσθέσετε το βίντεο στα βίντεο που σας αρέσουν, να εγγραφείτε ή να τους ακολουθήσετε στην μέση του περιεχομένου. Αν είναι μεγάλο ή αφορά κάτι συγκεκριμένο, θα πρέπει να είναι στην κατηγορία αυτοπροώθησης</string>
+            <string name="revanced_sb_segments_highlight">Αποκορύφωμα</string>
+            <string name="revanced_sb_segments_highlight_sum">Το μέρος του βίντεο που ψάχνουν οι περισσότεροι άνθρωποι</string>
+            <string name="revanced_sb_segments_intro">Διάλειμμα/Εισαγωγή</string>
+            <string name="revanced_sb_segments_intro_sum">Χρονικό διάστημα χωρίς πραγματικό περιεχόμενο. Θα μπορούσε να είναι μια παύση, ένα στατικό καρέ ή μία επαναλαμβανόμενη κίνηση. Δεν περιλαμβάνει μεταβάσεις που περιέχουν πληροφορίες</string>
+            <string name="revanced_sb_segments_outro">Τελική Οθόνη/Συντελεστές</string>
+            <string name="revanced_sb_segments_outro_sum">Όταν εμφανίζονται οι συντελεστές ή τα προτεινόμενα βίντεο των καναλιών. Όχι για επίλογους που περιέχουν πληροφορίες</string>
+            <string name="revanced_sb_segments_preview">Προεπισκόπηση/Περίληψη</string>
+            <string name="revanced_sb_segments_preview_sum">Συλλογή από κλιπ που δείχνουν τι έρχεται ή τι συνέβη στο βίντεο ή σε άλλα βίντεο μιας σειράς, όπου όλες οι πληροφορίες επαναλαμβάνονται αλλού</string>
+            <string name="revanced_sb_segments_filler">Εφαπτομενικές Σκηνές/Αστεία</string>
+            <string name="revanced_sb_segments_filler_sum">Παρεμβατικές σκηνές που προστίθενται μόνο για γέμισμα ή χιούμορ και δεν είναι απαραίτητες για την κατανόηση του κύριου περιεχομένου του βίντεο. Δεν περιλαμβάνει τμήματα που παρέχουν πλαίσιο ή λεπτομέρειες υποβάθρου</string>
+            <string name="revanced_sb_segments_nomusic">Μουσική: Τμήμα χωρίς μουσική</string>
+            <string name="revanced_sb_segments_nomusic_sum">Μόνο για χρήση σε βίντεο μουσικής. Τμήματα χωρίς μουσική σε βίντεο μουσικής, που δεν καλύπτονται ήδη από άλλη κατηγορία</string>
+            <string name="revanced_sb_skip_button_compact">Παράλειψη</string>
+            <string name="revanced_sb_skip_button_compact_highlight">Αποκορύφωμα</string>
+            <string name="revanced_sb_skip_button_sponsor">Παράλειψη χορηγού</string>
+            <string name="revanced_sb_skip_button_selfpromo">Παράλειψη προώθησης</string>
+            <string name="revanced_sb_skip_button_interaction">Παράλειψη αλληλεπίδρασης</string>
+            <string name="revanced_sb_skip_button_highlight">Μετάβαση στο αποκορύφωμα</string>
+            <string name="revanced_sb_skip_button_intro_beginning">Παράλειψη εισαγωγής</string>
+            <string name="revanced_sb_skip_button_intro_middle">Παράλειψη διακοπής</string>
+            <string name="revanced_sb_skip_button_intro_end">Παράλειψη διακοπής</string>
+            <string name="revanced_sb_skip_button_outro">Παράλειψη επιλόγου</string>
+            <string name="revanced_sb_skip_button_preview_beginning">Παράλειψη προεπισκόπησης</string>
+            <string name="revanced_sb_skip_button_preview_middle">Παράλειψη προεπισκόπησης</string>
+            <string name="revanced_sb_skip_button_preview_end">Παράλειψη περίληψης</string>
+            <string name="revanced_sb_skip_button_filler">Παράλειψη πληρωτικού</string>
+            <string name="revanced_sb_skip_button_nomusic">Παράλειψη μη-μουσικού</string>
+            <string name="revanced_sb_skip_button_unsubmitted">Παράλειψη τμήματος</string>
+            <string name="revanced_sb_skipped_sponsor">Παραλείφθηκε χορηγός</string>
+            <string name="revanced_sb_skipped_selfpromo">Παραλείφθηκε αυτοπροώθηση</string>
+            <string name="revanced_sb_skipped_interaction">Παραλείφθηκε ενοχλητική υπενθύμιση</string>
+            <string name="revanced_sb_skipped_highlight">Έγινε μετάβαση στο αποκορύφωμα</string>
+            <string name="revanced_sb_skipped_intro_beginning">Παραλείφθηκε η εισαγωγή</string>
+            <string name="revanced_sb_skipped_intro_middle">Παραλείφθηκε η διακοπή</string>
+            <string name="revanced_sb_skipped_intro_end">Παραλείφθηκε η διακοπή</string>
+            <string name="revanced_sb_skipped_outro">Παραλείφθηκε ο επίλογος</string>
+            <string name="revanced_sb_skipped_preview_beginning">Παραλείφθηκε η προεπισκόπηση</string>
+            <string name="revanced_sb_skipped_preview_middle">Παραλείφθηκε η προεπισκόπηση</string>
+            <string name="revanced_sb_skipped_preview_end">Παραλείφθηκε η περίληψη</string>
+            <string name="revanced_sb_skipped_filler">Παραλείφθηκε το πληρωτικό</string>
+            <string name="revanced_sb_skipped_nomusic">Παραλείφθηκε τμήμα χωρίς μουσική</string>
+            <string name="revanced_sb_skipped_unsubmitted">Παραλήφθηκε μη-απεσταλμένο τμήμα</string>
+            <string name="revanced_sb_skipped_multiple_segments">Παραλείφθηκαν πολλαπλά τμήματα</string>
+            <string name="revanced_sb_skip_automatically">Αυτόματη παράλειψη</string>
+            <string name="revanced_sb_skip_automatically_once">Αυτόματη παράλειψη μία φορά</string>
+            <string name="revanced_sb_skip_showbutton">Εμφάνιση κουμπιού παράλειψης</string>
+            <string name="revanced_sb_skip_seekbaronly">Εμφάνιση στη γραμμή προόδου</string>
+            <string name="revanced_sb_skip_ignore">Απενεργοποίηση</string>
+            <string name="revanced_sb_submit_failed_invalid" formatted="false">Αδυναμία υποβολής τμήματος: %s</string>
+            <string name="revanced_sb_submit_failed_timeout">Το SponsorBlock είναι προσωρινά εκτός λειτουργίας</string>
+            <string name="revanced_sb_submit_failed_unknown_error" formatted="false">Αδυναμία υποβολής τμήματος (κατάσταση: %d %s)</string>
+            <string name="revanced_sb_submit_failed_rate_limit">Αδυναμία υποβολής τμήματος.\nΌριο συχνότητας (πάρα πολλά από τον ίδιο χρήστη ή την ίδια IP)</string>
+            <string name="revanced_sb_submit_failed_forbidden" formatted="false">Αδυναμία υποβολής του τμήματος: %s</string>
+            <string name="revanced_sb_submit_failed_duplicate">Αδυναμία υποβολής του τμήματος.\nΥπάρχει ήδη</string>
+            <string name="revanced_sb_submit_succeeded">Το τμήμα υποβλήθηκε επιτυχώς</string>
+            <string name="revanced_sb_sponsorblock_connection_failure_generic">SponsorBlock προσωρινά μή διαθέσιμο</string>
+            <string name="revanced_sb_sponsorblock_connection_failure_status" formatted="false">SponsorBlock προσωρινά μή διαθέσιμο (κατάσταση %d)</string>
+            <string name="revanced_sb_sponsorblock_connection_failure_timeout">SponsorBlock προσωρινά μή διαθέσιμο (χρονοκαθυστέρηση API)</string>
+            <string name="revanced_sb_vote_failed_timeout">Αδυναμία ψηφοφορίας για το τμήμα (χρονοκαθυστέρηση API)</string>
+            <string name="revanced_sb_vote_failed_unknown_error" formatted="false">Αδυναμία ψηφοφορίας για το τμήμα (κατάσταση: %d %s)</string>
+            <string name="revanced_sb_vote_failed_forbidden" formatted="false">Αδυναμία ψηφοφορίας για το τμήμα: %s</string>
+            <string name="revanced_sb_vote_upvote">Θετική ψήφος</string>
+            <string name="revanced_sb_vote_downvote">Αρνητική ψήφος</string>
+            <string name="revanced_sb_vote_category">Αλλαγή κατηγορίας</string>
+            <string name="revanced_sb_vote_no_segments">Δεν υπάρχουν τμήματα προς ψήφιση</string>
+            <string name="revanced_sb_new_segment_choose_category">Επιλέξτε την κατηγορία του τμήματος</string>
+            <string name="revanced_sb_new_segment_disabled_category">Η κατηγορία είναι απενεργοποιημένη στις ρυθμίσεις. Ενεργοποιήστε την κατηγορία για υποβολή.</string>
+            <string name="revanced_sb_new_segment_title">Νέο τμήμα SponsorBlock</string>
+            <string name="revanced_sb_new_segment_mark_time_as_question" formatted="false">Ορισμός %02d:%02d:%03d ως αρχή ή τέλος ενός νέου τμήματος;</string>
+            <string name="revanced_sb_new_segment_mark_start">αρχή</string>
+            <string name="revanced_sb_new_segment_mark_end">τέλος</string>
+            <string name="revanced_sb_new_segment_now">τώρα</string>
+            <string name="revanced_sb_new_segment_time_start">Χρόνος έναρξης του τμήματος</string>
+            <string name="revanced_sb_new_segment_time_end">Χρόνος λήξης του τμήματος</string>
+            <string name="revanced_sb_new_segment_confirm_title">Είναι σωστοί οι χρόνοι;</string>
+            <string name="revanced_sb_new_segment_confirm_content" formatted="false">Το τμήμα έχει διάρκεια από %02d:%02d έως %02d:%02d (%d λεπτά %02d δευτερόλεπτα)\nΕίναι έτοιμο για αποστολή;</string>
+            <string name="revanced_sb_new_segment_start_is_before_end">Η αρχή πρέπει να είναι πριν από το τέλος</string>
+            <string name="revanced_sb_new_segment_mark_locations_first">Σημειώστε δύο σημεία στην γραμμή προόδου πρώτα</string>
+            <string name="revanced_sb_new_segment_preview_segment_first">Κάντε προεπισκόπηση του τμήματος, και σιγουρευτείτε ότι παραλείπεται σωστά</string>
+            <string name="revanced_sb_new_segment_edit_by_hand_title">Επεξεργασία χρονισμού του τμήματος χειροκίνητα</string>
+            <string name="revanced_sb_new_segment_edit_by_hand_content">Θέλετε να επεξεργαστείτε τον χρονισμό του τμήματος από την αρχή ή από το τέλος του τμήματος;</string>
+            <string name="revanced_sb_new_segment_edit_by_hand_parse_error">Δόθηκε μη έγκυρος χρόνος</string>
+            <string name="revanced_sb_stats">Στατιστικά</string>
+            <string name="revanced_sb_stats_connection_failure">Στατιστικά στοιχεία προσωρινά μή διαθέσιμα (το API είναι εκτός λειτουργίας)</string>
+            <string name="revanced_sb_stats_loading">Φόρτωση...</string>
+            <string name="revanced_sb_stats_sb_disabled">Το SponsorBlock είναι απενεργοποιημένο</string>
+            <string name="revanced_sb_stats_username" formatted="false">Το όνομα χρήστη σας: &lt;b>%s&lt;/b></string>
+            <string name="revanced_sb_stats_username_change">Πατήστε για να αλλάξετε το όνομα χρήστη σας</string>
+            <string name="revanced_sb_stats_username_change_unknown_error" formatted="false">Αδυναμία αλλαγής ονόματος χρήστη: Κατάσταση: %d %s</string>
+            <string name="revanced_sb_stats_username_changed">Το όνομα χρήστη άλλαξε επιτυχώς</string>
+            <string name="revanced_sb_stats_reputation" formatted="false">Η φήμη σας είναι &lt;b>%.2f&lt;/b></string>
+            <string name="revanced_sb_stats_submissions" formatted="false">Δημιουργήσατε &lt;b>%s&lt;/b> τμήματα</string>
+            <string name="revanced_sb_stats_saved_zero">Πίνακας κατάταξης SponsorBlock</string>
+            <string name="revanced_sb_stats_saved" formatted="false">Έχετε σώσει ανθρώπους από &lt;b>%s&lt;/b> τμήματα</string>
+            <string name="revanced_sb_stats_saved_sum_zero">Πατήστε για να δείτε τα παγκόσμια στατιστικά και τους κορυφαίους συνεισφέροντες</string>
+            <string name="revanced_sb_stats_saved_sum" formatted="false">Αυτό είναι &lt;b>%s&lt;/b> από τις ζωές τους.&lt;br>Πατήστε για να δείτε τον πίνακα κατάταξης</string>
+            <string name="revanced_sb_stats_self_saved" formatted="false">Έχετε παραλείψει &lt;b>%s&lt;/b> τμήματα</string>
+            <string name="revanced_sb_stats_self_saved_sum" formatted="false">Αυτό είναι &lt;b>%s&lt;/b></string>
+            <string name="revanced_sb_stats_self_saved_reset_title">Επαναφορά μετρητή τμημάτων που παραλείφθηκαν;</string>
+            <string name="revanced_sb_stats_saved_hour_format" formatted="false">%s ώρες %s λεπτά</string>
+            <string name="revanced_sb_stats_saved_minute_format" formatted="false">%s λεπτά %s δευτερόλεπτα</string>
+            <string name="revanced_sb_stats_saved_second_format" formatted="false">%s δευτερόλεπτα</string>
+            <string name="revanced_sb_color_dot_label">Χρώμα:</string>
+            <string name="revanced_sb_color_changed">Το χρώμα άλλαξε</string>
+            <string name="revanced_sb_color_reset">Το χρώμα επαναφέρθηκε</string>
+            <string name="revanced_sb_color_invalid">Μη έγκυρος κωδικός χρώματος</string>
+            <string name="revanced_sb_reset_color">Επαναφορά χρώματος</string>
+            <string name="revanced_sb_reset">Επαναφορά</string>
+            <string name="revanced_sb_about">Σχετικά με</string>
+            <string name="revanced_sb_about_api">sponsor.ajay.app</string>
+            <string name="revanced_sb_about_api_sum">Τα δεδομένα παρέχονται από το SponsorBlock API. Πατήστε για να μάθετε περισσότερα, και να δείτε τις λήψεις για άλλες πλατφόρμες</string>
+        </patch>
+        <patch id="layout.spoofappversion.SpoofAppVersionPatch">
+            <string name="revanced_spoof_app_version_title">Τροποποίηση έκδοσης εφαρμογής</string>
+            <string name="revanced_spoof_app_version_summary_on">Η έκδοση τροποποιήθηκε</string>
+            <string name="revanced_spoof_app_version_summary_off">Η έκδοση δεν τροποποιήθηκε</string>
+            <string name="revanced_spoof_app_version_user_dialog_message">Η έκδοση της εφαρμογής YouTube θα τροποποιηθεί σε παλιότερη.\n\nΑυτό θα αλλάξει την εμφάνιση και τα χαρακτηριστικά της εφαρμογής, αλλά ενδέχεται να εμφανιστούν άγνωστες παρενέργειες.\n\nΑν αργότερα απενεργοποιηθεί, συνιστάται η εκκαθάριση των δεδομένων της εφαρμογής για την αποφυγή σφαλμάτων UI.</string>
+            <string name="revanced_spoof_app_version_target_title">Έκδοση τροποποίησης της εφαρμογής</string>
+            <string name="revanced_spoof_app_version_target_entry_1">18.33.40 - Επαναφορά του RYD στα Shorts σε λειτουργία ανώνυμης περιήγησης</string>
+            <string name="revanced_spoof_app_version_target_entry_2">18.20.39 - Επαναφορά ευρέος μενού ταχύτητας &amp; ποιότητας βίντεο</string>
+            <string name="revanced_spoof_app_version_target_entry_3">18.09.39 - Επαναφορά καρτέλας βιβλιοθήκης</string>
+            <string name="revanced_spoof_app_version_target_entry_4">17.41.37 - Επαναφορά κατηγορίας λίστας αναπαραγωγής παλιού στυλ</string>
+            <string name="revanced_spoof_app_version_target_entry_5">17.33.42 - Επαναφορά της παλιάς εμφάνισης UI</string>
+        </patch>
+        <patch id="layout.startpage.ChangeStartPagePatch">
+            <string name="revanced_start_page_title">Ορισμός αρχικής σελίδας</string>
+            <string name="revanced_start_page_entry_0">Προεπιλογή</string>
+            <string name="revanced_start_page_entry_1">Αρχική</string>
+            <string name="revanced_start_page_entry_2">Αναζήτηση</string>
+            <string name="revanced_start_page_entry_3">Εγγραφές</string>
+            <string name="revanced_start_page_entry_4">Εξερεύνηση</string>
+            <string name="revanced_start_page_entry_5">Shorts</string>
+            <string name="revanced_start_page_entry_6">Βιβλιοθήκη</string>
+            <string name="revanced_start_page_entry_7">Βίντεο που σας αρέσουν</string>
+            <string name="revanced_start_page_entry_8">Ιστορικό</string>
+            <string name="revanced_start_page_entry_9">Τάσεις</string>
+        </patch>
+        <patch id="layout.startupshortsreset.DisableResumingShortsOnStartupPatch">
+            <string name="revanced_disable_resuming_shorts_player_title">Απενεργοποίηση συνέχισης των Shorts</string>
+            <string name="revanced_disable_resuming_shorts_player_summary_on">Ο αναπαραγωγέας Shorts δεν θα συνεχιστεί κατά την εκκίνηση της εφαρμογής</string>
+            <string name="revanced_disable_resuming_shorts_player_summary_off">Ο αναπαραγωγέας Shorts θα συνεχιστεί κατά την εκκίνηση της εφαρμογής</string>
+        </patch>
+        <patch id="layout.tablet.EnableTabletLayoutPatch">
+            <string name="revanced_tablet_layout_title">Λειτουργία διεπαφής τάμπλετ</string>
+            <string name="layout_summary">Ρυθμίσεις που σχετίζονται με τη διάταξη</string>
+            <string name="revanced_tablet_layout_summary_on">Η διεπαφή τάμπλετ είναι ενεργοποιημένη</string>
+            <string name="revanced_tablet_layout_summary_off">Η διεπαφή τάμπλετ είναι απενεργοποιημένη</string>
+            <string name="revanced_tablet_layout_user_dialog_message">Οι δημοσιεύσεις κοινότητας δεν εμφανίζονται στη διεπαφή τάμπλετ</string>
+        </patch>
+        <patch id="layout.tabletminiplayer.TabletMiniPlayerPatch">
+            <string name="revanced_tablet_miniplayer_title">Ελαχιστοποιημένος αναπαραγωγέας τάμπλετ</string>
+            <string name="revanced_tablet_miniplayer_summary_on">Ο ελαχιστοποιημένος αναπαραγωγέας στυλ τάμπλετ είναι ενεργοποιημένος</string>
+            <string name="revanced_tablet_miniplayer_summary_off">Ο ελαχιστοποιημένος αναπαραγωγέας στυλ τάμπλετ είναι απενεργοποιημένος</string>
+        </patch>
+        <patch id="layout.theme.ThemeBytecodePatch">
+            <string name="revanced_gradient_loading_screen_title">Διαβαθμισμένη οθόνη φόρτωσης</string>
+            <string name="revanced_gradient_loading_screen_summary_on">Η οθόνη φόρτωσης θα έχει φόντο διαβάθμισης</string>
+            <string name="revanced_gradient_loading_screen_summary_off">Η οθόνη φόρτωσης θα έχει στερεό φόντο</string>
+        </patch>
+        <patch id="layout.theme.ThemeResourcePatch">
+            <string name="revanced_seekbar_custom_color_title">Προσαρμοσμένο χρώμα γραμμής προόδου</string>
+            <string name="revanced_seekbar_custom_color_summary_on">Η γραμμή προόδου εμφανίζεται με προσαρμοσμένο χρώμα</string>
+            <string name="revanced_seekbar_custom_color_summary_off">Η γραμμή προόδου εμφανίζεται με το αρχικό χρώμα</string>
+            <string name="revanced_seekbar_custom_color_value_title">Χρώμα γραμμής προόδου</string>
+            <string name="revanced_seekbar_custom_color_value_summary">Το χρώμα της γραμμής προόδου</string>
+            <string name="revanced_seekbar_custom_color_invalid">Μη έγκυρη τιμή χρώματος γραμμής προόδου. Επαναφέρθηκε η προεπιλεγμένη τιμή.</string>
+        </patch>
+        <patch id="layout.thumbnails.AlternativeThumbnailsPatch">
+            <string name="revanced_alt_thumbnail_home_title">Καρτέλα \'Αρχική\'</string>
+            <string name="revanced_alt_thumbnail_subscription_title">Καρτέλα \'Εγγραφές\'</string>
+            <string name="revanced_alt_thumbnail_library_title">Καρτέλα \'Εσείς\'</string>
+            <string name="revanced_alt_thumbnail_player_title">Λίστες αναπαραγωγής, προτάσεις</string>
+            <string name="revanced_alt_thumbnail_search_title">Αποτελέσματα αναζήτησης</string>
+            <string name="revanced_alt_thumbnail_options_entry_1">Αρχικές μικρογραφίες</string>
+            <string name="revanced_alt_thumbnail_options_entry_2">DeArrow &amp; Αρχικές μικρογραφίες</string>
+            <string name="revanced_alt_thumbnail_options_entry_3">DeArrow &amp; Λήψεις ακίνητων καρέ</string>
+            <string name="revanced_alt_thumbnail_options_entry_4">Λήψεις ακίνητων καρέ</string>
+            <string name="revanced_alt_thumbnail_dearrow_about_title">DeArrow</string>
+            <string name="revanced_alt_thumbnail_dearrow_about_summary">Το DeArrow παρέχει μικρογραφίες από το πλήθος για τα βίντεο στο YouTube. Αυτές οι μικρογραφίες είναι συχνά πιο σχετικές από αυτές που παρέχονται από το YouTube\n\nΑν ενεργοποιηθεί, οι διευθύνσεις URL των βίντεο θα αποστέλλονται στον διακομιστή API. Δεν θα αποστέλλονται άλλα δεδομένα. Αν ένα βίντεο δεν έχει μικρογραφίες DeArrow, τότε εμφανίζονται οι αρχικές ή ακόμα συλλήψεις\n\nΠατήστε εδώ για να μάθετε περισσότερα σχετικά με το DeArrow</string>
+            <string name="revanced_alt_thumbnail_dearrow_connection_toast_title">Εμφάνιση μηνύματος αν το API δεν είναι διαθέσιμο</string>
+            <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_on">Να εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης αν το DeArrow δεν είναι διαθέσιμο</string>
+            <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_off">Να μην εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης αν το DeArrow δεν είναι διαθέσιμο</string>
+            <string name="revanced_alt_thumbnail_dearrow_api_url_title">Τελικό σημείο του DeArrow API</string>
+            <string name="revanced_alt_thumbnail_dearrow_api_url_summary">Η διεύθυνση URL του τελικού σημείου αποθήκευσης μικρογραφιών DeArrow</string>
+            <string name="revanced_alt_thumbnail_stills_about_title">Λήψεις ακίνητων καρέ βίντεο</string>
+            <string name="revanced_alt_thumbnail_stills_about_summary">Οι λήψεις λαμβάνονται από την αρχή/μέση/τέλος του κάθε βίντεο. Αυτές οι εικόνες είναι ενσωματωμένες στο YouTube και δεν χρησιμοποιείται εξωτερικό API</string>
+            <string name="revanced_alt_thumbnail_stills_fast_title">Χρήση γρήγορων μικρογραφιών</string>
+            <string name="revanced_alt_thumbnail_stills_fast_summary_on">Χρησιμοποιούνται λήψεις καρέ μέτριας ποιότητας. Οι μικρογραφίες θα φορτώνουν γρηγορότερα, αλλά τα ζωντανά, μη κυκλοφορημένα η πολύ παλιά βίντεο ενδέχεται να εμφανίζουν κενές μικρογραφίες</string>
+            <string name="revanced_alt_thumbnail_stills_fast_summary_off">Χρησιμοποιούνται λήψεις καρέ υψηλής ποιότητας</string>
+            <string name="revanced_alt_thumbnail_stills_time_title">Ο χρόνος του βίντεο από τον οποίο θα ληφθεί το καρέ</string>
+            <string name="revanced_alt_thumbnail_stills_time_entry_1">Αρχή του βίντεο</string>
+            <string name="revanced_alt_thumbnail_stills_time_entry_2">Μέση του βίντεο</string>
+            <string name="revanced_alt_thumbnail_stills_time_entry_3">Τέλος του βίντεο</string>
+            <string name="revanced_alt_thumbnail_dearrow_error">DeArrow προσωρινά μή διαθέσιμο (κωδικός κατάστασης: %s)</string>
+            <string name="revanced_alt_thumbnail_dearrow_error_generic">Το DeArrow είναι προσωρινά μή διαθέσιμο</string>
+        </patch>
+        <patch id="misc.announcements.AnnouncementsPatch">
+            <string name="revanced_announcements_title">Εμφάνιση ανακοινώσεων ReVanced</string>
+            <string name="revanced_announcements_summary_on">Οι ανακοινώσεις εμφανίζονται κατά την εκκίνηση</string>
+            <string name="revanced_announcements_summary_off">Οι ανακοινώσεις δεν εμφανίζονται κατά την εκκίνηση</string>
+            <string name="revanced_announcements_enabled_summary">Εμφάνιση ανακοινώσεων κατά την εκκίνηση</string>
+            <string name="revanced_announcements_connection_failed">Αποτυχία σύνδεσης με τον πάροχο ανακοινώσεων</string>
+            <string name="revanced_announcements_dialog_dismiss">Παράβλεψη</string>
+        </patch>
+        <patch id="misc.autorepeat.AutoRepeatPatch">
+            <string name="revanced_auto_repeat_title">Ενεργοποίηση αυτόματης επανάληψης</string>
+            <string name="revanced_auto_repeat_summary_on">Η αυτόματη επανάληψη είναι ενεργοποιημένη</string>
+            <string name="revanced_auto_repeat_summary_off">Η αυτόματη πληρωμή είναι απενεργοποιημένη</string>
+        </patch>
+        <patch id="misc.dimensions.spoof.SpoofDeviceDimensionsPatch">
+            <string name="revanced_spoof_device_dimensions_title">Παραποίηση διαστάσεων συσκευής</string>
+            <string name="revanced_spoof_device_dimensions_summary_on">Οι διαστάσεις συσκευής παραποιούνται</string>
+            <string name="revanced_spoof_device_dimensions_summary_off">Οι διαστάσεις συσκευής δεν παραποιούνται\n\nΗ παραποίηση διαστάσεων συσκευής μπορεί να ξεκλειδώσει υψηλότερες ποιότητες βίντεο αλλά ενδέχεται να εμφανιστούν άγνωστες παρενέργειες</string>
+        </patch>
+        <patch id="misc.fix.playback.SpoofSignaturePatch">
+            <string name="revanced_spoof_signature_verification_screen_title">Παραποίηση εγκυρότητας εφαρμογής</string>
+            <string name="revanced_spoof_signature_verification_screen_summary">Παραποίηση της εγκυρότητας εφαρμογής για την αποφυγή προβλημάτων αναπαραγωγής</string>
+            <string name="revanced_spoof_signature_verification_enabled_title">Παραποίηση εγκυρότητας εφαρμογής</string>
+            <string name="revanced_spoof_signature_verification_enabled_summary_on">Η εγκυρότητα της εφαρμογής παραποίεται\n\nΟι παρενέργειες περιλαμβάνουν:\n• Το ενισχυμένο bitrate δεν είναι διαθέσιμο\n• Δεν είναι δυνατή η λήψη βίντεο\n• Δεν υπάρχουν μικρογραφίες γραμμής προόδου για πληρωμένα βίντεο</string>
+            <string name="revanced_spoof_signature_verification_enabled_summary_off">Η εγκυρότητα της εφαρμογής δεν παραποίεται\n\nΗ αναπαραγωγή βίντεο ενδέχεται να μην λειτουργεί</string>
+            <string name="revanced_spoof_signature_verification_enabled_user_dialog_message">Η απενεργοποίηση αυτής της ρύθμισης θα προκαλέσει προβλήματα αναπαραγωγής βίντεο.</string>
+            <string name="revanced_spoof_signature_in_feed_enabled_title">Παραποίηση εγκυρότητας στην ροή</string>
+            <string name="revanced_spoof_signature_in_feed_enabled_summary_on">Η εγκυρότητα της εφαρμογής παραποίεται\n\nΟι παρενέργειες περιλαμβάνουν:\n• Τα βίντεο στη ροή δεν έχουν υπότιτλους\n• Τα βίντεο ροής που παίζονται αυτόματα θα εμφανιστούν στο ιστορικό σας</string>
+            <string name="revanced_spoof_signature_in_feed_enabled_summary_off">Η εγκυρότητα της εφαρμογής δεν παραποιείται για βίντεο στη ροή\n\nΤα βίντεο στη ροή θα αναπαράγονται για λιγότερο από 1 λεπτό πριν αντιμετωπίσουν προβλήματα αναπαραγωγής</string>
+            <string name="revanced_spoof_storyboard_title">Παραποίηση του storyboard</string>
+            <string name="revanced_spoof_storyboard_summary_on">Το storyboard παραποιείται</string>
+            <string name="revanced_spoof_storyboard_summary_off">Το storyboard δεν παραποιείται\n\nΟι παρενέργειες περιλαμβάνουν:\n• Η λειτουργία περιβάλλοντος δεν λειτουργεί\n• Δεν υπάρχουν μικρογραφίες γραμμής προόδου</string>
+            <string name="revanced_spoof_storyboard_timeout">Storyboard προσωρινά μη διαθέσιμο (χρονοκαθυστέρηση API)</string>
+            <string name="revanced_spoof_storyboard_io_exception">Storyboard προσωρινά μη διαθέσιμο: %s</string>
+        </patch>
+        <patch id="misc.gms.GmsCoreSupportResourcePatch">
+            <string name="microg_settings_title">Ρυθμίσεις GmsCore</string>
+            <string name="microg_settings_summary">Ρυθμίσεις για το MicroG GmsCore</string>
+        </patch>
+        <patch id="misc.links.BypassURLRedirectsPatch">
+            <string name="revanced_bypass_url_redirects_title">Παράκαμψη ανακατευθύνσεων συνδέσμων</string>
+            <string name="revanced_bypass_url_redirects_summary_on">Οι ανακατευθύνσεις URL παρακάμπτονται</string>
+            <string name="revanced_bypass_url_redirects_summary_off">Οι ανακατευθύνσεις URL δεν παρακάμπτονται</string>
+        </patch>
+        <patch id="misc.links.OpenLinksExternallyPatch">
+            <string name="revanced_external_browser_title">Άνοιγμα συνδέσμων σε πρόγραμμα περιήγησης</string>
+            <string name="revanced_external_browser_summary_on">Οι συνδέσμοι ανοίγουν εξωτερικά</string>
+            <string name="revanced_external_browser_summary_off">Οι συνδέσμοι ανοίγουν εντός της εφαρμογής</string>
+        </patch>
+        <patch id="misc.minimizedplayback.MinimizedPlaybackPatch">
+            <string name="revanced_minimized_playback_title">Ελαχιστοποιημένη αναπαραγωγή παρασκηνίου</string>
+            <string name="revanced_minimized_playback_summary">Αυτή η ρύθμιση μπορεί να βρεθεί στις Ρυθμίσεις -&gt; Παρασκήνιο</string>
+        </patch>
+        <patch id="misc.privacy.RemoveTrackingQueryParameterPatch">
+            <string name="revanced_remove_tracking_query_parameter_title">Καθαρισμός συνδέσμων κοινοποίησης</string>
+            <string name="revanced_remove_tracking_query_parameter_summary_on">Η παράμετρος παρακολούθησης αφαιρείται από τους συνδέσμους</string>
+            <string name="revanced_remove_tracking_query_parameter_summary_off">Η παράμετρος παρακολούθησης δεν αφαιρείται από τους συνδέσμους</string>
+        </patch>
+        <patch id="misc.zoomhaptics.ZoomHapticsPatch">
+            <string name="revanced_disable_zoom_haptics_title">Κατάργηση απόκρισης δόνησης στο ζουμ</string>
+            <string name="revanced_disable_zoom_haptics_summary_on">Η απόκριση δόνησης είναι απενεργοποιημένη</string>
+            <string name="revanced_disable_zoom_haptics_summary_off">Η απόκριση δόνησης είναι ενεργοποιημένη</string>
+        </patch>
+        <patch id="video.hdrbrightness.HDRBrightnessPatch">
+            <string name="revanced_hdr_auto_brightness_title">Αυτόματη φωτεινότητα HDR</string>
+            <string name="revanced_hdr_auto_brightness_summary_on">Η αυτόματη φωτεινότητα HDR είναι ενεργοποιημένη</string>
+            <string name="revanced_hdr_auto_brightness_summary_off">Η αυτόματη φωτεινότητα HDR είναι απενεργοποιημένη</string>
+        </patch>
+        <patch id="video.quality.RememberVideoQualityPatch">
+            <string name="revanced_video_quality_default_entry_1">Αυτόματη ποιότητα</string>
+            <string name="revanced_video_quality_default_entry_2">2160p</string>
+            <string name="revanced_video_quality_default_entry_3">1440p</string>
+            <string name="revanced_video_quality_default_entry_4">1080p</string>
+            <string name="revanced_video_quality_default_entry_5">720p</string>
+            <string name="revanced_video_quality_default_entry_6">480p</string>
+            <string name="revanced_video_quality_default_entry_7">360p</string>
+            <string name="revanced_video_quality_default_entry_8">240p</string>
+            <string name="revanced_video_quality_default_entry_9">144p</string>
+            <string name="revanced_remember_video_quality_last_selected_title">Απομνημόνευση αλλαγών ποιότητας βίντεο</string>
+            <string name="revanced_remember_video_quality_last_selected_summary_on">Οι αλλαγές ποιότητας ισχύουν για όλα τα βίντεο</string>
+            <string name="revanced_remember_video_quality_last_selected_summary_off">Οι αλλαγές ποιότητας ισχύουν μόνο για το τρέχον βίντεο</string>
+            <string name="revanced_video_quality_default_wifi_title">Προεπιλεγμένη ποιότητα βίντεο με Wi-Fi</string>
+            <string name="revanced_video_quality_default_mobile_title">Προεπιλεγμένη ποιότητα βίντεο με δεδομένα κινητής τηλεφωνίας</string>
+            <string name="revanced_remember_video_quality_mobile">δεδομένα</string>
+            <string name="revanced_remember_video_quality_wifi">Wi-Fi</string>
+            <string name="revanced_remember_video_quality_toast" formatted="false">Η προεπιλεγμένη ποιότητα με %s άλλαξε σε: %s</string>
+        </patch>
+        <patch id="video.speed.custom.CustomPlaybackSpeedPatch">
+            <string name="revanced_custom_playback_speeds_title">Προσαρμοσμένες ταχύτητες αναπαραγωγής</string>
+            <string name="revanced_custom_playback_speeds_summary">Προσθέστε ή αλλάξτε τις διαθέσιμες ταχύτητες αναπαραγωγής</string>
+            <string name="revanced_custom_playback_speeds_invalid" formatted="false">Οι ταχύτητες πρέπει να είναι λιγότερες από %sx. Έγινε επαναφορά στις προεπιλεγμένες τιμές.</string>
+            <string name="revanced_custom_playback_speeds_parse_exception">Μη έγκυρες ταχύτητες αναπαραγωγής. Έγινε επαναφορά στις προεπιλεγμένες τιμές.</string>
+        </patch>
+        <patch id="video.speed.remember.RememberPlaybackSpeedPatch">
+            <string name="revanced_remember_playback_speed_last_selected_title">Απομνημόνευση αλλαγών ταχύτητας αναπαραγωγής</string>
+            <string name="revanced_remember_playback_speed_last_selected_summary_on">Οι αλλαγές ταχύτητας αναπαραγωγής ισχύουν για όλα τα βίντεο</string>
+            <string name="revanced_remember_playback_speed_last_selected_summary_off">Οι αλλαγές ταχύτητας αναπαραγωγής ισχύουν μόνο για το τρέχον βίντεο</string>
+            <string name="revanced_playback_speed_default_title">Προεπιλεγμένη ταχύτητα αναπαραγωγής</string>
+            <string name="revanced_remember_playback_speed_toast" formatted="false">Η προεπιλεγμένη ταχύτητα άλλαξε σε: %s</string>
+        </patch>
+        <patch id="video.videoqualitymenu.RestoreOldVideoQualityMenuResourcePatch">
+            <string name="revanced_restore_old_video_quality_menu_title">Επαναφορά παλιού μενού ποιότητας βίντεο</string>
+            <string name="revanced_restore_old_video_quality_menu_summary_on">Εμφανίζεται το παλιό μενού ποιότητας βίντεο</string>
+            <string name="revanced_restore_old_video_quality_menu_summary_off">Δεν εμφανίζεται το παλιό μενού ποιότητας βίντεο</string>
+        </patch>
+        <patch id="interaction.seekbar.EnableSlideToSeekPatch">
+            <string name="revanced_slide_to_seek_title">Χειρονομία συρσίματος για αναζήτηση</string>
+            <string name="revanced_slide_to_seek_summary_on">Η χειρονομία συρσίματος για αναζήτηση στη γραμμή προόδου είναι ενεργοποιημένη</string>
+            <string name="revanced_slide_to_seek_summary_off">Η χειρονομία συρσίματος για αναζήτηση στη γραμμή προόδου είναι απενεργοποιημένη</string>
+        </patch>
+    </app>
+    <app id="twitch">
+        <patch id="ad.audio.AudioAdsPatch">
+            <string name="revanced_block_audio_ads_title">Αποκλεισμός διαφημίσεων ήχου</string>
+            <string name="revanced_block_audio_ads_summary_on">Οι διαφημίσεις ήχου έχουν αποκλειστεί</string>
+            <string name="revanced_block_audio_ads_summary_off">Οι διαφημίσεις ήχου δεν έχουν αποκλειστεί</string>
+        </patch>
+        <patch id="ad.embedded.EmbeddedAdsPatch">
+            <string name="revanced_embedded_ads_service_unavailable">%s μη διαθέσιμο. Οι διαφημίσεις ενδέχεται να εμφανίζονται. Δοκιμάστε να μεταβείτε σε άλλη υπηρεσία αποκλεισμού διαφημίσεων στις ρυθμίσεις.</string>
+            <string name="revanced_embedded_ads_service_failed">Ο διακομιστής %s επέστρεψε ένα σφάλμα. Οι διαφημίσεις ενδέχεται να εμφανίζονται. Δοκιμάστε να μεταβείτε σε άλλη υπηρεσία αποκλεισμού διαφημίσεων στις ρυθμίσεις.</string>
+            <string name="revanced_block_embedded_ads_title">Αποκλεισμός ενσωματωμένων διαφημίσεων βίντεο</string>
+            <string name="revanced_block_embedded_ads_entry_1">Ανενεργό</string>
+            <string name="revanced_block_embedded_ads_entry_2">Διαμεσολαβητής Luminous</string>
+            <string name="revanced_block_embedded_ads_entry_3">Διαμεσολαβητής PurpleAdBlock</string>
+        </patch>
+        <patch id="ad.video.VideoAdsPatch">
+            <string name="revanced_block_video_ads_title">Αποκλεισμός διαφημίσεων βίντεο</string>
+            <string name="revanced_block_video_ads_summary_on">Οι διαφημίσεις βίντεο έχουν αποκλειστεί</string>
+            <string name="revanced_block_video_ads_summary_off">Οι διαφημίσεις βίντεο δεν έχουν αποκλειστεί</string>
+        </patch>
+        <patch id="chat.antidelete.ShowDeletedMessagesPatch">
+            <string name="revanced_deleted_msg">το μήνυμα διαγράφηκε</string>
+            <string name="revanced_show_deleted_messages_title">Εμφάνιση διαγραμμένων μηνυμάτων</string>
+            <string name="revanced_show_deleted_messages_entry_1">Να μην εμφανίζονται διαγραμμένα μηνύματα</string>
+            <string name="revanced_show_deleted_messages_entry_2">Απόκρυψη διαγραμμένων μηνυμάτων πίσω από ένα spoiler</string>
+            <string name="revanced_show_deleted_messages_entry_3">Εμφάνιση διαγραμμένων μηνυμάτων ως επιγραμμένο κείμενο</string>
+        </patch>
+        <patch id="chat.autoclaim.AutoClaimChannelPointsPatch">
+            <string name="revanced_auto_claim_channel_points_title">Αυτόματη εξαργύρωση Πόντων Καναλιού</string>
+            <string name="revanced_auto_claim_channel_points_summary_on">Οι Πόντοι Καναλιών εξαργυρώνονται αυτόματα</string>
+            <string name="revanced_auto_claim_channel_points_summary_off">Οι Πόντοι Καναλιών δεν εξαργυρώνονται αυτόματα</string>
+        </patch>
+        <patch id="debug.DebugModePatch">
+            <string name="revanced_twitch_debug_mode_title">Λειτουργία εντοπισμού σφαλμάτων Twitch</string>
+            <string name="revanced_twitch_debug_mode_summary_on">Η λειτουργία εντοπισμού σφαλμάτων Twitch είναι ενεργοποιημένη (δεν συνιστάται)</string>
+            <string name="revanced_twitch_debug_mode_summary_off">Η λειτουργία εντοπισμού σφαλμάτων Twitch είναι απενεργοποιημένη</string>
+        </patch>
+        <patch id="misc.settings.SettingsPatch">
+            <string name="revanced_settings">Ρυθμίσεις ReVanced</string>
+            <string name="revanced_ads_screen_title">Διαφημίσεις</string>
+            <string name="revanced_ads_screen_summary">Ρυθμίσεις αποκλεισμού διαφημίσεων</string>
+            <string name="revanced_chat_screen_title">Συνομιλία</string>
+            <string name="revanced_chat_screen_summary">Ρυθμίσεις συνομιλίας</string>
+            <string name="revanced_misc_screen_title">Διάφορα</string>
+            <string name="revanced_misc_screen_summary">Διάφορες ρυθμίσεις</string>
+            <string name="revanced_general_category_title">Γενικές ρυθμίσεις</string>
+            <string name="revanced_other_category_title">Άλλες ρυθμίσεις</string>
+            <string name="revanced_client_ads_category_title">Διαφημίσεις από πλευράς πελάτη</string>
+            <string name="revanced_surestream_ads_category_title">Διαφημίσεις διακομιστή</string>
+            <string name="revanced_debug_title">Καταγραφή εντοπισμού σφαλμάτων</string>
+            <string name="revanced_debug_summary_on">Η καταγραφή σφαλμάτων είναι ενεργοποιημένη</string>
+            <string name="revanced_debug_summary_off">Η καταγραφή σφαλμάτων είναι απενεργοποιημένη</string>
+        </patch>
+    </app>
+</resources>
