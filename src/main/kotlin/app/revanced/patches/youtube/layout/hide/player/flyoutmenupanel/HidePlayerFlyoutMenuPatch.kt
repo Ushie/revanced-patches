@@ -39,7 +39,14 @@ import app.revanced.patches.youtube.misc.settings.SettingsPatch
                 "19.06.39",
                 "19.07.40",
                 "19.08.36",
-                "19.09.37"
+                "19.09.38",
+                "19.10.39",
+                "19.11.43",
+                "19.12.41",
+                "19.13.37",
+                "19.14.43",
+                "19.15.36",
+                "19.16.39",
             ]
         )
     ]
@@ -61,12 +68,13 @@ object HidePlayerFlyoutMenuPatch : ResourcePatch() {
                                 SwitchPreference("revanced_hide_player_flyout_additional_settings"),
                                 SwitchPreference("revanced_hide_player_flyout_loop_video"),
                                 SwitchPreference("revanced_hide_player_flyout_ambient_mode"),
-                                SwitchPreference("revanced_hide_player_flyout_report"),
                                 SwitchPreference("revanced_hide_player_flyout_help"),
                                 SwitchPreference("revanced_hide_player_flyout_speed"),
+                                SwitchPreference("revanced_hide_player_flyout_lock_screen"),
                                 SwitchPreference("revanced_hide_player_flyout_more_info"),
                                 SwitchPreference("revanced_hide_player_flyout_audio_track"),
                                 SwitchPreference("revanced_hide_player_flyout_watch_in_vr"),
+                                SwitchPreference("revanced_hide_video_quality_menu_footer"),
                         )
                 )
         )

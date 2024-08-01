@@ -64,7 +64,7 @@ This document describes how to contribute to ReVanced Patches.
 
 ## 📖 Resources to help you get started
 
-* The [documentation](https://github.com/ReVanced/revanced-patcher/tree/docs/docs) contains the fundamentals
+* The [documentation](https://github.com/ReVanced/revanced-patcher/tree/main/docs) contains the fundamentals
 of ReVanced Patcher and how to use ReVanced Patcher to create patches
 * [Our backlog](https://github.com/orgs/ReVanced/projects/12) is where we keep track of what we're working on
 * [Issues](https://github.com/ReVanced/revanced-patches/issues) are where we keep track of bugs and feature requests
@@ -82,6 +82,10 @@ Features can be requested by opening an issue using the
 
 If you encounter a bug while using ReVanced Patches, open an issue using the
 [Bug report issue template](https://github.com/ReVanced/revanced-patches/issues/new?assignees=&labels=Bug+report&projects=&template=bug_report.yml&title=bug%3A+).
+
+## 🌐 Submitting translations
+
+ You can contribute translations at [translate.revanced.app](https://translate.revanced.app).
 
 ## 🧑‍⚖️ Guidelines for requesting or contributing patches
 
@@ -107,7 +111,6 @@ are unaffected by this change.
 * Payment circumvention: We do not accept patches that exist solely to bypass payment for the app or any of its features
 * Malicious patches: Patches that are malicious in nature are not allowed
 
-
 ## 📝 How to contribute
 
 1. Before contributing, it is recommended to open an issue to discuss your change
@@ -115,11 +118,11 @@ with the maintainers of ReVanced Patches. This will help you determine whether y
 and whether it is worth your time to implement it
 2. Development happens on the `dev` branch. Fork the repository and create your branch from `dev`
 3. Commit your changes. In case you are contributing a new patch, make sure to follow the conventions for patches
-described in the [documentation](https://github.com/ReVanced/revanced-patches/tree/docs/docs)
+described in the [ReVanced Patcher documentation](https://github.com/ReVanced/revanced-patcher/tree/main/docs)
 4. Submit a pull request to the `dev` branch of the repository and reference issues
 that your pull request closes in the description of your pull request
 5. Our team will review your pull request and provide feedback. Once your pull request is approved,
 it will be merged into the `dev` branch and will be included in the next release of ReVanced Patches
-
+ 
 ❤️ Thank you for considering contributing to ReVanced Patches,
 ReVanced
