@@ -8,13 +8,13 @@ import app.revanced.patcher.patch.PatchException
 import app.revanced.patcher.util.proxy.mutableTypes.MutableClass
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
 import app.revanced.patches.shared.misc.mapping.ResourceMappingPatch
+import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.instruction.Instruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.WideLiteralInstruction
 import com.android.tools.smali.dexlib2.iface.reference.Reference
 import com.android.tools.smali.dexlib2.util.MethodUtil
-
 
 fun MethodFingerprint.resultOrThrow() = result ?: throw exception
 
@@ -59,36 +59,66 @@ fun MutableMethod.injectHideViewCall(
     insertIndex: Int,
     viewRegister: Int,
     classDescriptor: String,
-    targetMethod: String
+    targetMethod: String,
 ) = addInstruction(
     insertIndex,
-    "invoke-static { v$viewRegister }, $classDescriptor->$targetMethod(Landroid/view/View;)V"
+    "invoke-static { v$viewRegister }, $classDescriptor->$targetMethod(Landroid/view/View;)V",
 )
 
 /**
- * Find the index of the first instruction with the id of the given resource name.
+ * Get the index of the first instruction with the id of the given resource name.
+ *
+ * Requires [ResourceMappingPatch] as a dependency.
  *
  * @param resourceName the name of the resource to find the id for.
  * @return the index of the first instruction with the id of the given resource name, or -1 if not found.
+ * @throws PatchException if the resource cannot be found.
+ * @see [indexOfIdResourceOrThrow]
  */
-fun Method.findIndexForIdResource(resourceName: String): Int {
-    fun getIdResourceId(resourceName: String) = ResourceMappingPatch.resourceMappings.single {
-        it.type == "id" && it.name == resourceName
-    }.id
+fun Method.indexOfIdResource(resourceName: String): Int {
+    val resourceId = ResourceMappingPatch["id", resourceName]
+    return indexOfFirstWideLiteralInstructionValue(resourceId)
+}
 
-    return indexOfFirstWideLiteralInstructionValue(getIdResourceId(resourceName))
+/**
+ * Get the index of the first instruction with the id of the given resource name or throw a [PatchException].
+ *
+ * Requires [ResourceMappingPatch] as a dependency.
+ *
+ * @throws [PatchException] if the resource is not found, or the method does not contain the resource id literal value.
+ */
+fun Method.indexOfIdResourceOrThrow(resourceName: String): Int {
+    val index = indexOfIdResource(resourceName)
+    if (index < 0) {
+        throw PatchException("Found resource id for: '$resourceName' but method does not contain the id: $this")
+    }
+
+    return index
 }
 
 /**
  * Find the index of the first wide literal instruction with the given value.
  *
  * @return the first literal instruction with the value, or -1 if not found.
+ * @see indexOfFirstWideLiteralInstructionValueOrThrow
  */
 fun Method.indexOfFirstWideLiteralInstructionValue(literal: Long) = implementation?.let {
     it.instructions.indexOfFirst { instruction ->
         (instruction as? WideLiteralInstruction)?.wideLiteral == literal
     }
 } ?: -1
+
+/**
+ * Find the index of the first wide literal instruction with the given value,
+ * or throw an exception if not found.
+ *
+ * @return the first literal instruction with the value, or throws [PatchException] if not found.
+ */
+fun Method.indexOfFirstWideLiteralInstructionValueOrThrow(literal: Long): Int {
+    val index = indexOfFirstWideLiteralInstructionValue(literal)
+    if (index < 0) throw PatchException("Could not find literal value: $literal")
+    return index
+}
 
 /**
  * Check if the method contains a literal with the given value.
@@ -127,30 +157,101 @@ inline fun <reified T : Reference> Instruction.getReference() = (this as? Refere
  * @param predicate The predicate to match.
  * @return The index of the first [Instruction] that matches the predicate.
  */
-fun Method.indexOfFirstInstruction(predicate: Instruction.() -> Boolean) =
-    this.implementation!!.instructions.indexOfFirst(predicate)
+// TODO: delete this on next major release, the overloaded method with an optional start index serves the same purposes.
+// Method is deprecated, but annotation is commented out otherwise during compilation usage of the replacement is
+// incorrectly flagged as deprecated.
+// @Deprecated("Use the overloaded method with an optional start index.", ReplaceWith("indexOfFirstInstruction(predicate)"))
+fun Method.indexOfFirstInstruction(predicate: Instruction.() -> Boolean) = indexOfFirstInstruction(0, predicate)
 
-    /**
-     * Return the resolved methods of [MethodFingerprint]s early.
-     */
-    fun List<MethodFingerprint>.returnEarly(bool: Boolean = false) {
-        val const = if (bool) "0x1" else "0x0"
-        this.forEach { fingerprint ->
-            fingerprint.result?.let { result ->
-                val stringInstructions = when (result.method.returnType.first()) {
-                    'L' -> """
+/**
+ * Get the index of the first [Instruction] that matches the predicate, starting from [startIndex].
+ *
+ * @param startIndex Optional starting index to start searching from.
+ * @return -1 if the instruction is not found.
+ * @see indexOfFirstInstructionOrThrow
+ */
+fun Method.indexOfFirstInstruction(startIndex: Int = 0, predicate: Instruction.() -> Boolean): Int {
+    val index = this.implementation!!.instructions.drop(startIndex).indexOfFirst(predicate)
+
+    return if (index >= 0) {
+        startIndex + index
+    } else {
+        -1
+    }
+}
+
+/**
+ * Get the index of the first [Instruction] that matches the predicate, starting from [startIndex].
+ *
+ * @return the index of the instruction
+ * @throws PatchException
+ * @see indexOfFirstInstruction
+ */
+fun Method.indexOfFirstInstructionOrThrow(startIndex: Int = 0, predicate: Instruction.() -> Boolean): Int {
+    val index = indexOfFirstInstruction(startIndex, predicate)
+    if (index < 0) {
+        throw PatchException("Could not find instruction index")
+    }
+    return index
+}
+
+/**
+ * @return The list of indices of the opcode in reverse order.
+ */
+fun Method.findOpcodeIndicesReversed(opcode: Opcode): List<Int> {
+    val indexes = implementation!!.instructions
+        .withIndex()
+        .filter { (_, instruction) -> instruction.opcode == opcode }
+        .map { (index, _) -> index }
+        .reversed()
+
+    if (indexes.isEmpty()) throw PatchException("No ${opcode.name} instructions found in: $this")
+
+    return indexes
+}
+
+/**
+ * Return the resolved method early.
+ */
+fun MethodFingerprint.returnEarly(bool: Boolean = false) {
+    val const = if (bool) "0x1" else "0x0"
+    result?.let { result ->
+        val stringInstructions = when (result.method.returnType.first()) {
+            'L' ->
+                """
                         const/4 v0, $const
                         return-object v0
                         """
-                    'V' -> "return-void"
-                    'I', 'Z' -> """
+            'V' -> "return-void"
+            'I', 'Z' ->
+                """
                         const/4 v0, $const
                         return v0
                         """
-                    else -> throw Exception("This case should never happen.")
-                }
-
-                result.mutableMethod.addInstructions(0, stringInstructions)
-            } ?: throw fingerprint.exception
+            else -> throw Exception("This case should never happen.")
         }
-    }
+
+        result.mutableMethod.addInstructions(0, stringInstructions)
+    } ?: throw exception
+}
+
+/**
+ * Return the resolved methods early.
+ */
+fun Iterable<MethodFingerprint>.returnEarly(bool: Boolean = false) = forEach { fingerprint ->
+    fingerprint.returnEarly(bool)
+}
+
+/**
+ * Return the resolved methods early.
+ */
+@Deprecated("Use the Iterable version")
+fun List<MethodFingerprint>.returnEarly(bool: Boolean = false) = forEach { fingerprint ->
+    fingerprint.returnEarly(bool)
+}
+
+/**
+ * Resolves this fingerprint using the classDef of a parent fingerprint.
+ */
+fun MethodFingerprint.alsoResolve(context: BytecodeContext, parentFingerprint: MethodFingerprint) =
+    also { resolve(context, parentFingerprint.resultOrThrow().classDef) }.resultOrThrow()

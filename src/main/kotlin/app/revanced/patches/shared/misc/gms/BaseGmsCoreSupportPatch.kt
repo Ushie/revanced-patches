@@ -11,15 +11,20 @@ import app.revanced.patches.all.misc.packagename.ChangePackageNamePatch
 import app.revanced.patches.shared.misc.gms.BaseGmsCoreSupportPatch.Constants.ACTIONS
 import app.revanced.patches.shared.misc.gms.BaseGmsCoreSupportPatch.Constants.AUTHORITIES
 import app.revanced.patches.shared.misc.gms.BaseGmsCoreSupportPatch.Constants.PERMISSIONS
+import app.revanced.patches.shared.misc.gms.fingerprints.CastDynamiteModuleFingerprint
 import app.revanced.patches.shared.misc.gms.fingerprints.GmsCoreSupportFingerprint
 import app.revanced.patches.shared.misc.gms.fingerprints.GmsCoreSupportFingerprint.GET_GMS_CORE_VENDOR_GROUP_ID_METHOD_NAME
+import app.revanced.patches.shared.misc.gms.fingerprints.GooglePlayUtilityFingerprint
+import app.revanced.patches.shared.misc.gms.fingerprints.ServiceCheckFingerprint
 import app.revanced.util.exception
 import app.revanced.util.getReference
+import app.revanced.util.indexOfFirstInstruction
 import app.revanced.util.returnEarly
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21c
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21c
+import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.iface.reference.StringReference
 import com.android.tools.smali.dexlib2.immutable.reference.ImmutableStringReference
 import com.android.tools.smali.dexlib2.util.MethodUtil
@@ -42,8 +47,8 @@ import com.android.tools.smali.dexlib2.util.MethodUtil
 abstract class BaseGmsCoreSupportPatch(
     private val fromPackageName: String,
     private val toPackageName: String,
-    private val primeMethodFingerprint: MethodFingerprint,
-    private val earlyReturnFingerprints: Set<MethodFingerprint>,
+    private val primeMethodFingerprint: MethodFingerprint?,
+    private val earlyReturnFingerprints: Set<MethodFingerprint> = setOf(),
     private val mainActivityOnCreateFingerprint: MethodFingerprint,
     private val integrationsPatchDependency: PatchClass,
     gmsCoreSupportResourcePatch: BaseGmsCoreSupportResourcePatch,
@@ -62,6 +67,9 @@ abstract class BaseGmsCoreSupportPatch(
     compatiblePackages = compatiblePackages,
     fingerprints = setOf(
         GmsCoreSupportFingerprint,
+        GooglePlayUtilityFingerprint,
+        ServiceCheckFingerprint,
+        CastDynamiteModuleFingerprint,
         mainActivityOnCreateFingerprint,
     ) + fingerprints,
     requiresIntegrations = true,
@@ -91,17 +99,36 @@ abstract class BaseGmsCoreSupportPatch(
         }
 
         // Specific method that needs to be patched.
-        transformPrimeMethod(packageName)
+        primeMethodFingerprint?.let { transformPrimeMethod(packageName) }
 
         // Return these methods early to prevent the app from crashing.
-        earlyReturnFingerprints.toList().returnEarly()
+        earlyReturnFingerprints.returnEarly()
+        ServiceCheckFingerprint.returnEarly()
+        // Not all apps have CastDynamiteModule, so we need to check if it's present.
+        if (CastDynamiteModuleFingerprint.result != null) {
+            CastDynamiteModuleFingerprint.returnEarly()
+        }
+        // Google Play Utility is not present in all apps, so we need to check if it's present.
+        if (GooglePlayUtilityFingerprint.result != null) {
+            GooglePlayUtilityFingerprint.returnEarly()
+        }
 
         // Verify GmsCore is installed and whitelisted for power optimizations and background usage.
-        mainActivityOnCreateFingerprint.result?.mutableMethod?.addInstructions(
-            1, // Hack to not disturb other patches (such as the YTMusic integrations patch).
-            "invoke-static/range { p0 .. p0 }, Lapp/revanced/integrations/shared/GmsCoreSupport;->" +
-                "checkGmsCore(Landroid/content/Context;)V",
-        ) ?: throw mainActivityOnCreateFingerprint.exception
+        mainActivityOnCreateFingerprint.result?.mutableMethod?.apply {
+            // Temporary fix for patches with an integrations patch that hook the onCreate method as well.
+            val setContextIndex = indexOfFirstInstruction {
+                val reference = getReference<MethodReference>() ?: return@indexOfFirstInstruction false
+
+                reference.toString() == "Lapp/revanced/integrations/shared/Utils;->setContext(Landroid/content/Context;)V"
+            }
+
+            // Add after setContext call, because this patch needs the context.
+            addInstructions(
+                if (setContextIndex < 0) 0 else setContextIndex + 1,
+                "invoke-static/range { p0 .. p0 }, Lapp/revanced/integrations/shared/GmsCoreSupport;->" +
+                    "checkGmsCore(Landroid/app/Activity;)V",
+            )
+        } ?: throw mainActivityOnCreateFingerprint.exception
 
         // Change the vendor of GmsCore in ReVanced Integrations.
         GmsCoreSupportFingerprint.result?.mutableClass?.methods
@@ -192,7 +219,7 @@ abstract class BaseGmsCoreSupportPatch(
     }
 
     private fun transformPrimeMethod(packageName: String) {
-        primeMethodFingerprint.result?.mutableMethod?.apply {
+        primeMethodFingerprint!!.result?.mutableMethod?.apply {
             var register = 2
 
             val index = getInstructions().indexOfFirst {
@@ -305,6 +332,7 @@ abstract class BaseGmsCoreSupportPatch(
             "com.google.android.gms.languageprofile.service.START",
             "com.google.android.gms.clearcut.service.START",
             "com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE",
+            "com.google.android.gms.accountsettings.action.VIEW_SETTINGS",
 
             // potoken
             "com.google.android.gms.potokens.service.START",

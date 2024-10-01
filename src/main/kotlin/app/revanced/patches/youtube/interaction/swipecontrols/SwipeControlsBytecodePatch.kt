@@ -20,7 +20,7 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
     dependencies = [
         IntegrationsPatch::class,
         PlayerTypeHookPatch::class,
-        SwipeControlsResourcePatch::class
+        SwipeControlsResourcePatch::class,
     ],
     compatiblePackages = [
         CompatiblePackage(
@@ -42,17 +42,24 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
                 "19.06.39",
                 "19.07.40",
                 "19.08.36",
-                "19.09.37"
-            ]
-        )
-    ]
+                "19.09.38",
+                "19.10.39",
+                "19.11.43",
+                "19.12.41",
+                "19.13.37",
+                "19.14.43",
+                "19.15.36",
+                "19.16.39",
+            ],
+        ),
+    ],
 )
 @Suppress("unused")
 object SwipeControlsBytecodePatch : BytecodePatch(
     setOf(
         MainActivityFingerprint,
-        SwipeControlsHostActivityFingerprint
-    )
+        SwipeControlsHostActivityFingerprint,
+    ),
 ) {
     override fun execute(context: BytecodeContext) {
         val wrapperClass = SwipeControlsHostActivityFingerprint.result!!.mutableClass
@@ -74,7 +81,7 @@ object SwipeControlsBytecodePatch : BytecodePatch(
                     accessFlags and AccessFlags.FINAL.value.inv(),
                     annotations,
                     hiddenApiRestrictions,
-                    implementation
+                    implementation,
                 ).toMutable()
             }
         }

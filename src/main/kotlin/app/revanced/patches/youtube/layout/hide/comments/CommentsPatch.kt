@@ -38,7 +38,14 @@ import app.revanced.patches.youtube.misc.settings.SettingsPatch
                 "19.06.39",
                 "19.07.40",
                 "19.08.36",
-                "19.09.37"
+                "19.09.38",
+                "19.10.39",
+                "19.11.43",
+                "19.12.41",
+                "19.13.37",
+                "19.14.43",
+                "19.15.36",
+                "19.16.39",
             ]
         )
     ]
@@ -55,9 +62,14 @@ object CommentsPatch : ResourcePatch() {
             PreferenceScreen(
                 "revanced_comments_screen",
                 preferences = setOf(
+                    SwitchPreference("revanced_hide_comments_by_members_header"),
                     SwitchPreference("revanced_hide_comments_section"),
-                    SwitchPreference("revanced_hide_preview_comment")
-                )
+                    SwitchPreference("revanced_hide_comments_create_a_short_button"),
+                    SwitchPreference("revanced_hide_comments_preview_comment"),
+                    SwitchPreference("revanced_hide_comments_thanks_button"),
+                    SwitchPreference("revanced_hide_comments_timestamp_and_emoji_buttons")
+                ),
+                sorting = PreferenceScreen.Sorting.UNSORTED
             )
         )
 
